@@ -1,0 +1,1817 @@
+$colO: #fe6634;
+$colM: #f91564;
+$colBG: #55e4ea;
+$colB: #398DD4;
+$colW: #fff;
+$colWF2: #f2f2f2;
+$colWB: #bbb;
+$colWC: #ccc;
+$colWE: #eee;
+$colWE6: #e6e6e6;
+$colB0: #000;
+
+
+@mixin linearGradient( $top, $bottom)
+    background: $bottom; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(-45deg,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(135deg,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= $top, endColorstr= $bottom,GradientType=0 ); /* IE6-9 */
+    color: $colW;
+$break-s: 480px;
+$break-m: 767px;
+$break-l: 1024px;
+
+
+html,body
+    width: 100%;
+    height: 100%;
+body
+    background-color: $colWF2;
+    font-size: 11px;
+    line-height: 1.2em;
+    color: $colB0;
+.overflow_hidden
+    overflow: hidden;
+h1
+    font-size: 1.2em;
+    padding: 5px 10px;
+    text-align: center;
+    i
+        margin-right: 5px;
+.btn_a
+    border-radius: 100px;
+    border: 0;
+    @include linearGradient( $colO, $colM);
+.btn_b
+    border-radius: 100px;
+    border: solid 1px $colWC;
+    color: $colWB;
+    background-color: transparent;
+.hide_block
+    display: none!important;
+.show_block
+    display: block!important;
+.color_m
+    color: $colM;
+.input_group
+    position: relative;
+    max-width: 280px;
+    margin: 0 auto;
+    input
+        padding-right: 30px;
+    i
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: #aaa;
+.select_group
+    position: relative;
+    overflow: hidden;
+    i
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: #aaa;
+.gray_line
+    width: 100%;
+    height: 1px;
+    background-color: $colWE;
+    margin: 20px 0;
+.header
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    @include linearGradient( $colO, $colM);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    >.logo
+        padding: 3px 0;
+        img
+            height: 40px;
+            padding: 0;
+            border: 0;
+.header_box
+    width: 100%;
+    padding-top: 48px;
+    
+.header2
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    @include linearGradient( $colO, $colM);
+    z-index: 5;
+    top: 0;
+    >.logo
+        padding: 3px 0;
+        margin-left: 15px;
+        float: left;
+        img
+            height: 40px;
+    p
+        color: $colW;
+        float: right;
+        line-height: 48px;
+        margin: 0;
+        padding-right: 47px;
+.header2_box
+    width: 100%;
+    padding-top: 101px;
+#nav_btn
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 48px;
+    width: 48px;
+    z-index: 20;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    &:active, &:focus
+        border: 0;
+        outline: 0;
+    #nav_img
+        height: 2px;
+        width: 20px;
+        background-color: $colW;
+        position: relative;
+        display: block;
+        transition: 0.2s ease-in-out;
+        &::after, &::before
+            position: absolute;
+            background-color: $colW;
+            height: 2px;
+            width: 20px;
+            display: block;
+            content: ' ';
+        &::after
+            top: 7px;
+            left: 0;
+            right: 0;
+        &::before
+            top: -7px;
+            left: 0;
+            right: 0;
+    &.active
+        #nav_img
+            transition: 0.2s ease-in-out;
+            background-color: rgba(255,255,255,0);
+            &::after
+                top: 0;
+                transform: rotateZ(45deg);
+                transition: 0.2s ease-in-out;
+            &::before
+                top: 0;
+                transform: rotateZ(-45deg);
+                transition: 0.2s ease-in-out;
+#black_bg
+    display: none;
+    background-color: rgba( 0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+#menu
+    display: none;
+    background-color: $colW;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    max-width: 300px;
+    z-index: 15;
+    ul
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li
+            &:first-child
+                @include linearGradient( $colO, $colM);
+                color: $colW;
+                padding-left: 15px;
+                height: 48px;
+                line-height: 48px;
+            a
+                color: $colB0;
+                text-decoration: none;
+                line-height: 32px;
+                height: 32px;
+                padding-left: 15px;
+                width: 100%;
+                box-sizing: border-box;
+                display: block;
+                i
+                    margin-right: 5px
+            border-bottom: solid 1px $colWE;
+    .sign_out
+        margin-top: 10px;
+        @include linearGradient( $colO, $colM);
+        line-height: 32px;
+        height: 32px;
+        border-radius: 0 100px 100px 0;
+        display: inline-block;
+        padding: 0 20px;
+        text-decoration: none;
+        i
+            margin-left: 5px;
+.show_money
+    width: 100%;
+    height: 24px;
+    background-color: $colW;
+    position: fixed;
+    top: 48px;
+    color: #999;
+    z-index: 6;
+    .no_checkout, .win_lose
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        line-height: 24px;
+        padding-left: 10px;
+    .no_checkout > i
+        color: $colO;
+        padding-left: 5px;
+    .win_lose > i
+        color: $colM;
+        padding-left: 5px;
+.select_game
+    box-sizing: border-box;
+    padding: 0 10px 5px;
+    width: 100%;
+    height: 29x;
+    background-color: $colW;
+    position: fixed;
+    top: 72px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    z-index: 5;
+    ul
+        margin: 0;
+        padding: 0;
+        border: 0;
+        list-style: none;
+        li
+            float: left;
+        .img_box
+            width: 24px;
+        .select_box
+            width: calc(50% - 5px);
+            .select_group
+                i
+                    bottom: 5px;
+                    right: 5px;
+            select
+                border: solid 1px $colWC;
+                border-radius: 0;
+                appearance: none;
+                -webkit-appearance: none;
+                background-color: $colW;
+                padding: 5px;
+                float: left;
+                width: 100%;
+                appearance: none;
+                -webkit-appearance: none;
+                background-color: $colW;
+                width: 100%;
+                border-radius: 0;
+                box-sizing: border-box;
+                display: block;
+                float: left;
+                background-image: url(../img/select_arrow.png);
+                background-repeat: no-repeat;
+                background-position: right 5px top 5px;
+        .center_box
+            width: 10px;
+            display: block;
+            height: 24px;
+.online_service_btn
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+.game_box
+    padding: 0 10px;
+    overflow: hidden;
+    background-color: $colWF2;
+    .game_info
+        >h2
+            font-size: 12px;
+            
+            i
+                margin-right: 5px;
+        overflow: hidden;
+        padding: 5px 5px 0;
+        p
+            float: left;
+            margin: 5px 1em 5px 0;
+            i
+                color: $colM;
+        .game_number
+            margin: 4px 0;
+            float: left;
+.red_ball
+    border-radius: 100px;
+    @include linearGradient( $colO, $colM);
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    display: block;
+    text-align: center;
+    float: left;
+    margin-right: 0.25em;
+.blue_ball
+    border-radius: 100px;
+    @include linearGradient( $colBG, $colB);
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    display: block;
+    text-align: center;
+    float: left;
+    margin-right: 0.25em;
+.login
+    width: 280px;
+    margin: 0 auto;
+    .input_group
+        margin-bottom: 20px;
+        input
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 5px;
+    >input
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 5px;
+        margin-bottom: 20px;
+.login_box
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: table;
+    background-color: $colW;
+.account
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px 10px;
+    img
+        display: block;
+        margin: 0 auto;
+    .input_group
+        input
+            color: $colB0;
+            border: 0;
+            border-bottom: solid 1px #ddd;
+    h1
+        font-size: 15px;
+        text-align: center;
+        margin: 2em auto 1em;
+        color: $colWB;
+        font-weight: normal;
+    .account_other
+        width: 260px;
+        text-align: center;
+        margin: 0 auto;
+        .link_btn
+            color: $colWB;
+            text-decoration: none;
+            padding: 0 1em;
+            border-right: solid 1px $colWB;
+            &:last-child
+                border-right: 0;
+.login_footer
+    width: 100%;
+    clear: both;
+    box-sizing: border-box;
+    text-align: center;
+    bottom: 3%;
+    font-size: 9px;
+    line-height: 16px;
+    color: $colWC;
+    margin-top: 5em;
+.reg_form
+    background-color: $colW;
+    input
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 10px 5px;
+        border: solid 1px $colWC
+    .submit_btn
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 280px;
+        display: block;
+        padding: 11px 0;
+        border-radius: 100px;
+        font-size: 13px;
+
+.sign_up
+    width: 280px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 60px
+    h1
+        font-size: 15px;
+        text-align: center;
+        margin: 2em auto 1em;
+        color: $colWB;
+        font-weight: normal;
+    input,select
+        border: 0;
+        border-bottom: solid 1px $colWC;
+    span
+        margin: 5px 0 15px;
+        font-size: 9px;
+        float: right;
+        color: $colWB;
+    p
+        color: $colM;
+        float: left;
+        font-size: 9px;
+        margin: 5px 0 15px;
+    .select_group
+        width: calc(50% - 5px);
+        float: left;
+        margin-right: 10px;
+        &:last-child
+            margin-right: 0;
+    select
+        appearance: none;
+        -webkit-appearance: none;
+        padding: 10px 5px;
+        background-color: $colW;
+        width: 100%;
+        border-radius: 0;
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        background-image: url(../img/select_arrow.png);
+        background-repeat: no-repeat;
+        background-position: right 10px top 10px;
+    .check_service
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 20px;
+        .check_box
+            width: auto;
+            float: left;
+            margin: 0 5px;
+        a
+            color: $colB0;
+            text-decoration: none;
+            i
+                text-decoration: underline;
+    .back_home
+        margin-top: 10px;
+        color: $colWB;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        display: block;
+     
+.overflow_hidden
+    overflow: hidden;
+    width: 100%;
+    
+        
+.game_link
+    overflow: hidden;
+    padding: 60px 10px 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $colW;
+    > div
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        ul
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: block;
+            overflow: hidden;
+            li
+                float: left;
+                width: 25%;
+                a
+                    font-size: 8px;
+                    color: $colB0;
+                    text-decoration: none;
+                    img
+                        width: 70%;
+                        max-width: 80px;
+                        border-radius: 20px;
+                    p
+                        margin: 5px 0 10px;
+.copyright
+    color: $colWB;
+    line-height: 20px;
+    margin: 20px auto 50px;
+    text-align: center;
+.game_panel
+    padding: 0 0 54px 0;
+    display: block;
+    overflow: hidden;
+    margin: 0 -5px;
+    .game_title
+        position: relative;
+        @include linearGradient( $colWC, $colWB);
+        margin: 5px;
+        border-radius: 10px;
+        color: $colW;
+        padding: 0;
+        box-shadow: 0 3px 3px rgba(0,0,0,0.15);
+        h1
+            margin: 0;
+            font-size: 1.4em;
+            line-height: 2em;
+        .hide_show_btn
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1.5em;
+            width: 40px;
+            line-height: 44px;
+            text-align: center;
+.game_content
+    display: block;
+    overflow: hidden;
+    table
+        width: calc(100% - 10px);
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 5px;
+        background-color: $colW;
+        box-shadow: 0 0 5px rgba(0,0,0,0.15);
+        border-spacing: 0;
+        border-collapse: separate;
+        float: left;
+        border: 0;
+        padding: 5px;
+        tr
+            background-color: $colW;
+            text-align: center;
+            th
+                color: $colW;
+                text-align: center;
+                padding: 5px 0;
+                font-size: 12px;
+                border-radius: 10px 10px 0 0;
+                .btn_a,.btn_b
+                    padding: 5px;
+                    width: 10%;
+                    display: inline-block;
+                    margin: 5px;
+                p
+                    font-weight: bold;
+                    border-radius: 100px;
+                    line-height: 26px;
+                    height: 26px;
+                    display: inline-block;
+                    padding: 0 7px;
+                    margin: 0  auto;
+                    @include linearGradient( $colO, $colM);
+            .td1
+                width: 15%;
+            .td2
+                width: 10%;
+            .td3
+                width: 25%;
+            .td4
+                width: 50%;
+            .td_border
+                border-top: solid 1px $colWB;
+                border-bottom: solid 1px $colWB;
+                padding-top: 10px;
+                &:first-child
+                    border-right: solid 1px $colWB;
+            td
+                box-sizing: border-box;
+                input
+                    margin: 5px 0;
+                    background-color: $colW;
+                    text-align: center;
+                    border: 0;
+                    border-bottom: solid 1px $colWC;
+                    width: 95%;
+                    padding: 5px;
+                    box-sizing: border-box;
+                .rounded_edges
+                    display: inline;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    line-height: 21px;
+                    height: 21px;
+                    padding: 6px 5px 4px;
+                    margin: 0  auto;
+                    background-color: #eee;
+                    border: solid 1px #ddd;
+                .select_group
+                    i
+                        bottom: 5px;
+                        right: 5px;
+                    select
+                        border: solid 1px $colWC;
+                        border-radius: 0;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        background-color: $colW;
+                        padding: 5px;
+                        float: left;
+                        width: 100%;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        background-color: $colW;
+                        border-radius: 0;
+                        box-sizing: border-box;
+                        display: block;
+                        float: left;
+                        background-image: url(../img/select_arrow.png);
+                        background-repeat: no-repeat;
+                        background-position: right 5px top 5px;
+                        margin-bottom: 10px;
+                h4
+                    font-weight: normal;
+                    color: #333;
+                    width: 100%;
+                    margin: 10px 0;
+                    > b
+                        color: $colM;
+                ul
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    > li
+                        height: 40px;
+                        float: left;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        width: 33%;
+                        &:active,&:focus
+                            background-color: #eee;
+            .hover
+                background-color: #eee;
+            .bottom_r
+                height: 10px;
+                border-radius: 0 0 10px 10px;
+.game_control
+    width: 100%;
+    position: fixed;
+    @include linearGradient( $colO, $colM);
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    .game_continue
+        box-sizing: border-box;
+        border: 0;
+        display: block;
+        margin-right: 5px;
+        font-size: 12px;
+        background-color: transparent;
+        border-radius: 100px;
+        border: 1px solid $colW;
+        padding: 9px;
+        color: $colW;
+        text-align: center;
+        text-decoration: none;
+        max-width: 180px;
+        margin: 0 auto;
+        i
+            margin-left: 5px;
+    p
+        margin: 0;
+        float: left;
+        line-height: 32px;
+        margin-right: 5px;
+    input
+        width: auto;
+        margin: 0;
+        float: left;
+        border: 0;
+    .game_control_money
+        padding: 10px 5px;
+        width: 25%;
+        text-align: center;
+        margin-right: 5px;
+    .game_control_preset
+        height: 32px;
+    .game_control_btn
+        float: right;
+        .game_control_submit
+            float: left;
+            position: relative;
+            button
+                box-sizing: border-box;
+                color: $colW;
+                display: block;
+                margin-right: 5px;
+                font-size: 12px;
+                background-color: transparent;
+                border-radius: 100px;
+                border: 1px solid $colW;
+                padding: 9px 24px 9px 10px;
+            i
+                position: absolute;
+                top: 9px;
+                right: 14px;
+        .game_control_reset
+            float: left;
+            position: relative;
+            input
+                box-sizing: border-box;
+                border: 1px solid $colW;
+                background-color: transparent;
+                border-radius: 100px;
+                color: $colW;
+                display: block;
+                font-size: 12px;
+                padding: 9px 24px 9px 10px;
+            i
+                position: absolute;
+                margin-top: 9px;
+                right: 8px;
+.bet_list
+    margin-top: 10px;
+    background-color: $colW;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: 0;
+    padding: 5px;
+    td
+        padding: 5px;
+                    
+.other_link
+    @include linearGradient( $colO, $colM);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    ul
+        list-style: none;
+        padding: 1.5em 0;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        max-width: 540px;
+        
+        li
+            box-sizing: border-box;
+            float: left;
+            width: 25%;
+            border-right: solid 1px $colW;
+            padding: 0 0.5em;
+            &:last-child
+                border: 0;
+            a
+                width: 90%;
+                padding: 10px 0;
+                text-decoration: none;
+                color: $colW;
+                i
+                    margin-right: 2px;
+.my_porfile
+    overflow: hidden;
+    margin: 10px;
+    background-color: $colW;
+    > span
+        padding: 0 10px;
+    ul
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        border-bottom: solid 10px $colW;
+        box-shadow: 0 0 10px rgba( 0, 0, 0, 0.15);
+        margin-bottom: 20px;
+        li
+            float: left;
+            width: 25%;
+            text-align: center;
+            padding: 13px 0 15px;
+            border-top: solid 2px $colWF2;
+            border-right: solid 1px $colWF2;
+            color: $colW;
+            background-color: $colWC;
+            box-sizing: border-box;
+        li:last-child
+            border-right: 0;
+            
+        .on_my_btn
+            border-top: solid 2px $colM;
+            background-color: $colW;
+            color: $colB0;
+            font-weight: bold;
+    .my_p_box
+        padding: 15px 0;
+        width: 280px;
+        margin: 0 auto;
+        h3
+            font-size: 13px;
+            margin-bottom: 30px;
+        > p
+            display: block;
+            margin: 5px 0 15px;
+            color: $colM;
+            text-align: right;
+        .input_group
+            margin: 0 auto;
+            height: 33px;
+            > labal
+                line-height: 33px;
+                display: block;
+                text-align: right;
+                padding-right: 0.5em;
+                box-sizing: border-box;
+                float: left;
+            input
+                padding: 10px 5px;
+                width: calc( 100% - 5em);
+                float: right;
+                box-sizing: border-box;
+                border: 0;
+                border-bottom: solid 1px $colWE;
+            .left_7em
+                letter-spacing: 0;
+                width: calc( 100% - 7em);
+        .btn_a
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 5px;
+            margin: 10px 0;
+          
+.withdraw
+    overflow: hidden;
+    margin: 10px;
+    background-color: $colW;
+    .withdraw_box
+        padding: 0 10px;
+        widows: 100%;
+        max-width: 720px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        .show_withdraw_list_btn
+            border: solid 1px $colM;
+            border-radius: 100px;
+            color: $colM;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        .withdraw_remind
+            background-color: #FFFCD0;
+            padding: 10px;
+            line-height: 2em;
+            margin: 0 -10px 20px;
+            border-bottom: 1px solid #F9D8A3;
+            border-top: 1px solid #F9D8A3;
+            text-align: center;
+            b
+                color: $colM;
+                font-size: 1.2em;
+        h3
+            font-size: 13px;
+            margin: 20px 0;
+            text-align: center;
+        > p
+            display: block;
+            margin: 5px 0 15px;
+            color: $colM;
+            text-align: right;
+        .input_group
+            margin: 0 auto;
+            width: 100%;
+            max-width: 720px;
+            height: 33px;
+            > labal
+                line-height: 33px;
+                display: block;
+                text-align: right;
+                padding-right: 0.5em;
+                box-sizing: border-box;
+                float: left;
+            input
+                padding: 10px 5px;
+                width: calc( 100% - 5em);
+                float: right;
+                box-sizing: border-box;
+                border: 0;
+                border-bottom: solid 1px $colWE;
+            .left_7em
+                letter-spacing: 0;
+                width: calc( 100% - 7em);
+        .show_withdraw_list
+            display: none;
+            .hide_withdraw_list_btn
+                border: solid 1px $colM;
+                background-color: $colM;
+                color: $colW;
+                padding: 5px 10px;
+                width: 4em;
+                float: right;
+            > table
+                width: 100%;
+                line-height: 1.5em;
+                box-sizing: border-box;
+                background-color: $colWE;
+                padding: 0 10px;
+                border-spacing: 0;
+                border-collapse: separate;
+                border-top: solid 1px $colWE;
+                margin-bottom: 20px;
+                tr:first-child td
+                    border: 0;
+                td
+                    padding: 8px 0;
+                    border-top: solid 1px $colW;
+            
+        .btn_a
+            width: 100%;
+            max-width: 280px;
+            box-sizing: border-box;
+            padding: 10px 5px;
+            margin: 10px auto;
+            display: block;
+.my_deposit
+    overflow: hidden;
+    margin: 10px;
+    background-color: $colW;
+    > span
+        padding: 0 10px;
+    ul
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        border-bottom: solid 10px $colW;
+        box-shadow: 0 0 10px rgba( 0, 0, 0, 0.15);
+        margin-bottom: 20px;
+        li
+            float: left;
+            width: 50%;
+            text-align: center;
+            padding: 13px 0 15px;
+            border-top: solid 2px $colWF2;
+            border-right: solid 1px $colWF2;
+            color: $colW;
+            background-color: $colWC;
+            box-sizing: border-box;
+        li:last-child
+            border-right: 0;
+            
+        .on_my_btn
+            border-top: solid 2px $colM;
+            background-color: $colW;
+            color: $colB0;
+            font-weight: bold;
+    .my_d_box
+        padding: 15px 0 55px;
+        width: 94%;
+        max-width: 720px;
+        margin: 0 auto;
+        list-style: none;
+        >li
+            margin-top: 10px;
+            display: block;
+            overflow: hidden;
+            padding: 10px;
+            span
+                color: $colWB;
+                float: right;
+                font-size: 9px;
+                margin: 5px 0 15px;
+            p
+                color: $colM;
+                text-align: right;
+                font-size: 9px;
+                width: 100%;
+                margin: 0 0 15px;
+            >ol
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                >li
+                    padding: 10px;
+                    border-bottom: solid 1px $colW;
+                    line-height: 2em;
+                    b
+                        padding-left: 0.5em;
+                    em
+                        padding-left: 1.5em;
+                        display: block;
+                        font-style: normal;
+        >li:nth-of-type(even)
+            background-color: $colWF2;
+        h3
+            font-size: 13px;
+            margin: 0 0 20px;
+        select
+            appearance: none;
+            -webkit-appearance: none;
+            padding: 10px 5px;
+            background-color: $colW;
+            width: 100%;
+            border-radius: 0;
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            background-image: url(../img/select_arrow.png);
+            background-repeat: no-repeat;
+            background-position: right 10px top 10px;
+            border: 0;
+            border-top: solid 1px $colWC;
+            border-bottom: solid 1px $colWC;
+
+        .bank_table
+            width: 100%;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin: 10px 0;
+            border-spacing: 0;
+            border-collapse: separate;
+            border: 0;
+            display: block;
+            overflow: hidden;
+            float: left;  
+            tr,td
+                vertical-align: middle;
+            img
+                display: block;
+                width: 60px;
+                margin-right: 10px;
+        .input_group
+            margin: 0 auto 5px;
+            height: 33px;
+            max-width: 720px;
+            > labal
+                line-height: 33px;
+                display: block;
+                text-align: justify;
+                padding-right: 0.5em;
+                box-sizing: border-box;
+                float: left;
+            input
+                padding: 10px 5px;
+                width: calc( 100% - 5em );
+                float: right;
+                box-sizing: border-box;
+                border: 0;
+                border-bottom: solid 1px $colWE;
+        .btn_a
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 5px;
+            margin: 10px 0;
+            
+.my_info
+    overflow: hidden;
+    margin: 10px;
+    background-color: $colW;
+    > span
+        padding: 0 10px;
+    ul
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        border-bottom: solid 10px $colW;
+        box-shadow: 0 0 10px rgba( 0, 0, 0, 0.15);
+        li
+            float: left;
+            width: 50%;
+            text-align: center;
+            padding: 13px 0 15px;
+            border-top: solid 2px $colWF2;
+            border-right: solid 1px $colWF2;
+            color: $colW;
+            background-color: $colWC;
+            box-sizing: border-box;
+        li:last-child
+            border-right: 0;
+            
+        .on_my_btn
+            border-top: solid 2px $colM;
+            background-color: $colW;
+            color: $colB0;
+            font-weight: bold;
+    table
+        width: 100%;
+        line-height: 1.5em;
+        box-sizing: border-box;
+        background-color: $colW;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-bottom: solid 1px $colWF2;
+        padding: 10px;
+        tr
+            background-color: $colWE6;
+            td
+                padding: 10px;
+                word-wrap: break-word;
+                word-break: break-all;
+            .no_info
+                padding: 12em 0;
+                text-align: center;
+            :nth-of-type(even)
+                width: 75%;
+        tr:nth-of-type(even)
+            background-color: $colWF2;
+    
+            
+            
+.my_order
+    overflow: hidden;
+    margin: 0 10px;
+    position: fixed;
+    top: 48px;
+    z-index: 5;
+    width: calc( 100% - 20px);
+    padding-bottom: 10px;
+    border-top: solid 10px $colWF2;
+    > span
+        padding: 0 10px;
+    > ul
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        overflow: hidden
+        li
+            float: left;
+            width: calc( 100% / 3);
+            text-align: center;
+            padding: 13px 0 15px;
+            border-top: solid 2px $colWF2;
+            border-right: solid 1px $colWF2;
+            color: $colW;
+            background-color: $colWC;
+            box-sizing: border-box;
+        li:last-child
+            border-right: 0;
+            
+        .on_my_btn
+            border-top: solid 2px $colM;
+            background-color: $colW;
+            color: $colB0;
+            font-weight: bold;
+    .order_panel_ctrl
+        border-bottom: solid 10px $colW;
+        box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.1);
+        background-color: $colW;
+        overflow: hidden;
+        >ul
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 10px 5px 0;
+            list-style: none;
+            >li
+                float: left;
+                display: block;
+            .select_1
+                width: 50%;
+                box-sizing: border-box;
+                padding: 0 5px;
+                float: left;
+            .select_2
+                width: 25%;
+                box-sizing: border-box;
+                padding: 0 5px;
+        select
+            border: solid 1px $colWC;
+            border-radius: 0;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: $colW;
+            padding: 5px;
+            float: left;
+            width: 100%;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: $colW;
+            width: 100%;
+            border-radius: 0;
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            background-image: url(../img/select_arrow.png);
+            background-repeat: no-repeat;
+            background-position: right 5px top 5px;
+        .order_status
+            width: 50%;
+            box-sizing: border-box;
+            padding: 5px 10px 0;
+            float: left;
+            line-height: 1.5em;
+            > input
+                margin-right: 2px;
+.order_list
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 127px 0 35px;
+    table
+        width: 100%;
+        line-height: 1.5em;
+        box-sizing: border-box;
+        background-color: $colW;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-bottom: solid 1px $colWF2;
+        padding: 10px;
+        tr
+            background-color: $colWE6;
+            td
+                padding: 10px;
+                word-wrap: break-word;
+                word-break: break-all;
+            .no_info
+                padding: 12em 0;
+                text-align: center;
+            :nth-of-type(even)
+                width: 80%;
+        tr:nth-of-type(even)
+            background-color: $colWF2;
+
+
+.my_wallet
+    overflow: hidden;
+    margin: 0 10px;
+    position: fixed;
+    top: 48px;
+    z-index: 5;
+    width: calc( 100% - 20px);
+    padding-bottom: 10px;
+    border-top: solid 10px $colWF2;
+    > span
+        padding: 0 10px;
+    > ul
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        overflow: hidden
+        li
+            float: left;
+            width: calc( 100% / 3);
+            text-align: center;
+            padding: 13px 0 15px;
+            border-top: solid 2px $colWF2;
+            border-right: solid 1px $colWF2;
+            color: $colW;
+            background-color: $colWC;
+            box-sizing: border-box;
+        li:last-child
+            border-right: 0;
+            
+        .on_my_btn
+            border-top: solid 2px $colM;
+            background-color: $colW;
+            color: $colB0;
+            font-weight: bold;
+    .wallet_panel_ctrl
+        border-bottom: solid 10px $colW;
+        box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.1);
+        background-color: $colW;
+        overflow: hidden;
+        >ul
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 10px 5px 0;
+            list-style: none;
+            >li
+                float: left;
+                display: block;
+            .select_1
+                width: 50%;
+                box-sizing: border-box;
+                padding: 0 5px;
+                float: left;
+            .select_2
+                width: 25%;
+                box-sizing: border-box;
+                padding: 0 5px;
+        select
+            border: solid 1px $colWC;
+            border-radius: 0;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: $colW;
+            padding: 5px;
+            float: left;
+            width: 100%;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: $colW;
+            width: 100%;
+            border-radius: 0;
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            background-image: url(../img/select_arrow.png);
+            background-repeat: no-repeat;
+            background-position: right 5px top 5px;
+        .wallet_status
+            width: 50%;
+            box-sizing: border-box;
+            padding: 5px 10px 0;
+            float: left;
+            line-height: 1.5em;
+            > input
+                margin-right: 2px;
+.wallet_list
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 90px 0 35px;
+    table
+        width: 100%;
+        line-height: 1.5em;
+        box-sizing: border-box;
+        background-color: $colW;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-bottom: solid 1px $colWF2;
+        padding: 10px;
+        tr
+            background-color: $colWE6;
+            td
+                padding: 10px;
+                word-wrap: break-word;
+                word-break: break-all;
+            .no_info
+                padding: 12em 0;
+                text-align: center;
+            :nth-of-type(even)
+                width: 75%;
+        tr:nth-of-type(even)
+            background-color: $colWF2;
+          
+.terms
+    background-color: $colW;
+    margin-bottom: 35px;
+    padding: 10px 15px;
+    line-height: 1.5em;
+    h1
+        font-size: 1.2em;
+    ul,ol
+        padding-left: 1.2em;
+    li
+        margin-bottom: 10px;
+.promo
+    background-color: $colW;
+    margin-bottom: 35px;
+    padding: 10px 15px;
+    line-height: 1.5em;
+    h1
+        font-size: 1.2em;
+    .promo_list
+        overflow: hidden;
+        max-width: 500px;
+        margin: 10px auto;
+        padding: 0 0 10px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.15);
+        >a
+            color: $colB0;
+            text-decoration: none;
+            p
+                margin: 5px;
+            img
+                width: 100%;
+                display: block;
+    .btn_a
+        color: $colW;
+        text-decoration: none;
+        padding: 4px 8px;
+        float: right;
+        margin-right: 10px;
+        color: $colW!important;
+
+.qa
+    background-color: $colW;
+    margin-bottom: 45px;
+    padding: 10px 15px;
+    line-height: 1.5em;
+    h1
+        font-size: 1.2em;
+        color: $colW;
+        background-color: $colM;
+        padding: 10px;
+        margin: 0 -5px;
+    h2
+        font-size: 1.1em;
+        color: $colW;
+        background-color: $colWC;
+        padding: 5px;
+        margin: 0 -5px;
+    p
+        margin: 5px 0;
+    ul,ol
+        padding-left: 1.2em;
+    li
+        margin-bottom: 10px;
+    a
+        color: $colM;
+.rule            
+    background-color: $colW;
+    margin-bottom: 35px;
+    padding: 10px 15px;
+    line-height: 1.5em;
+    select
+        border: solid 1px $colWC;
+        border-radius: 0;
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: $colW;
+        padding: 5px;
+        float: left;
+        width: 100%;
+        line-height: 1em;
+        appearance: none;
+        margin-bottom: 10px;
+        -webkit-appearance: none;
+        background-color: $colW;
+        width: 100%;
+        border-radius: 0;
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        background-image: url(../img/select_arrow.png);
+        background-repeat: no-repeat;
+        background-position: right 5px top 5px;
+    h1
+        font-size: 1.2em;
+    ul,ol
+        padding-left: 1.2em;
+    li
+        margin-bottom: 10px;
+.award            
+    background-color: $colW;
+    margin-bottom: 35px;
+    padding: 10px;
+    line-height: 1.5em;
+    h1
+        font-size: 1.2em;
+        padding-left: 5px;
+    h2
+        font-size: 1.1em;
+        padding-left: 5px;
+    select
+        border: solid 1px $colWC;
+        border-radius: 0;
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: $colW;
+        padding: 5px;
+        float: left;
+        width: 100%;
+        line-height: 1em;
+        appearance: none;
+        margin-bottom: 10px;
+        -webkit-appearance: none;
+        background-color: $colW;
+        width: 100%;
+        border-radius: 0;
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        background-image: url(../img/select_arrow.png);
+        background-repeat: no-repeat;
+        background-position: right 5px top 5px;
+    table
+        width: 100%;
+        line-height: 1.5em;
+        box-sizing: border-box;
+        background-color: $colW;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-bottom: solid 1px $colWF2;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-top: solid 1px $colWE;
+        border-bottom: solid 1px $colWE;
+        tr
+            background-color: $colW;
+            td
+                width: 25%;
+                padding: 5px;
+                word-wrap: break-word;
+                word-break: break-all;
+            th
+                background-color: $colW;
+                padding: 10px;
+                border-radius: 10px 10px 0 0;
+                .btn_a
+                    padding: 4px 8px;
+                    text-decoration: none;
+        tr:nth-of-type(even)
+            background-color: $colWF2;
+.article
+    overflow: hidden;
+    margin: 0 10px;
+    position: fixed;
+    top: 48px;
+    z-index: 5;
+    width: calc( 100% - 20px);
+    padding-bottom: 10px;
+    border-top: solid 10px $colWF2;
+    .article_ctrl
+        border-bottom: solid 10px $colW;
+        box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.1);
+        background-color: $colW;
+        overflow: hidden;
+        >ul
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 10px 5px 0;
+            list-style: none;
+            >li
+                float: left;
+                display: block;
+                h2
+                    margin: 0;
+                    font-size: 14px;
+                    padding: 5px 0;
+            .select_1
+                width: 50%;
+                box-sizing: border-box;
+                padding: 0 5px;
+                float: left;
+            .select_2
+                width: 25%;
+                box-sizing: border-box;
+                padding: 0 5px;
+        select
+            border: solid 1px $colWC;
+            border-radius: 0;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: $colW;
+            padding: 5px;
+            float: left;
+            width: 100%;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: $colW;
+            width: 100%;
+            border-radius: 0;
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            background-image: url(../img/select_arrow.png);
+            background-repeat: no-repeat;
+            background-position: right 5px top 5px;
+.article_list
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 46px 0 35px;
+    table
+        width: 100%;
+        line-height: 1.5em;
+        box-sizing: border-box;
+        background-color: $colW;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-bottom: solid 1px $colWF2;
+        padding: 10px;
+        tr
+            background-color: $colWE6;
+            th
+              text-align: left;
+              padding: 15px 10px;
+            td
+                padding: 10px;
+                word-wrap: break-word;
+                word-break: break-all;
+            .no_info
+                padding: 12em 0;
+                text-align: center;
+            :first-child
+                width: 60%;
+        tr:nth-of-type(even)
+            background-color: $colWF2;
+.footer
+    width: 100%;
+    @include linearGradient( $colO, $colM);
+    font-size: 9px;
+    text-align: center;
+    line-height: 20px;
+    padding: 20px 0px;
+    p
+        margin: 0;
+.pop_container
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    .pop_bg
+        background-color: rgba(0,0,0,0.7)
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left:  0;
+        right: 0;
+        z-index: 1;
+    .pop_list_info
+        text-align: center;
+    .pop_warning
+        text-align: center;
+        overflow: hidden;
+        .btn_a
+            padding: 0.5em 2em;
+            text-decoration: none;
+            display: block;
+            width: 30%;
+            margin: 0 auto;
+    .pop_list_box
+        background-color: #fff;
+        padding: 10px 5px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 10;
+        left: 10px;
+        top: 10px;
+        width: calc(100% - 30px);
+        .pop_list_content
+            table
+                width: calc(100% - 10px);
+                border-radius: 10px;
+                box-sizing: border-box;
+                margin: 5px;
+                background-color: $colW;
+                box-shadow: 0 0 5px rgba(0,0,0,0.15);
+                border-spacing: 0;
+                border-collapse: separate;
+                float: left;
+                border: 0;
+                padding: 5px;
+                tr
+                    background-color: $colW;
+                    text-align: center;
+                    th
+                        text-align: center;
+                        padding: 5px 0;
+                        font-size: 12px;
+                        padding: 10px;
+                        border-bottom: solid 1px #eee;
+                        .btn_a,.btn_b
+                            padding: 5px;
+                            display: inline-block;
+                            margin: 5px;
+                        p
+                            font-weight: bold;
+                            border-radius: 100px;
+                            line-height: 26px;
+                            height: 26px;
+                            display: inline-block;
+                            padding: 0 7px;
+                            margin: 0  auto;
+                            @include linearGradient( $colO, $colM);
+                        .game_control_submit
+                            width: 48%;
+                            margin-right: 2%;
+                            float: left;
+                            height: 26px;
+                            a
+                                border: 0;
+                                display: block;
+                                text-decoration: none;
+                                line-height: 16px;
+                                margin: 5px 0;
+                                width: 100%;
+                                padding: 5px;
+                                box-sizing: border-box;
+                        .game_control_reset
+                            width: 48%;
+                            margin-left: 2%;
+                            float: left;
+                            input
+                                border: solid 1px $colWC;
+                                line-height: 14px;
+                                width: 100%;
+
+                        
+                    .td1
+                        width: 60%;
+                        word-break: break-all;
+                        div
+                            margin-top: 5px;
+                    .td2
+                        width: 20%;
+                    .td3
+                        width: 20%;
+                        input
+                            display: block;
+                            margin: 0 auto;
+                            width: 1em;
+                    .td5
+                    td
+                        box-sizing: border-box;
+                        border-bottom: dotted 1px #eee;
+                        padding: 10px 5px;
+                        input
+                            margin: 5px 0;
+                            background-color: $colW;
+                            text-align: center;
+                            border: 0;
+                            border-bottom: solid 1px $colWC;
+                            width: 100%;
+                            padding: 5px;
+                            box-sizing: border-box;
+.hk_ball_room
+    .ball_01,
+    .ball_02,
+    .ball_07,
+    .ball_08,
+    .ball_12,
+    .ball_13,
+    .ball_18,
+    .ball_19,
+    .ball_23,
+    .ball_24,
+    .ball_29,
+    .ball_30,
+    .ball_34,
+    .ball_35,
+    .ball_40,
+    .ball_45,
+    .ball_46,
+    .ball_red
+        background-image: url(../img/ball_red.png);
+        border: 0!important;
+        background-color: transparent!important;
+    .ball_03,
+    .ball_04,
+    .ball_09,
+    .ball_10,
+    .ball_14,
+    .ball_15,
+    .ball_20,
+    .ball_25,
+    .ball_26,
+    .ball_31,
+    .ball_36,
+    .ball_37,
+    .ball_41,
+    .ball_42,
+    .ball_47,
+    .ball_48,
+    .ball_blue
+        background-image: url(../img/ball_blue.png);
+        border: 0!important;
+        background-color: transparent!important;
+    .ball_05,
+    .ball_06,
+    .ball_11,
+    .ball_16,
+    .ball_17,
+    .ball_21,
+    .ball_22,
+    .ball_27,
+    .ball_28,
+    .ball_32,
+    .ball_33,
+    .ball_38,
+    .ball_39,
+    .ball_43,
+    .ball_44,
+    .ball_49,
+    .ball_green
+        background-image: url(../img/ball_green.png);
+        border: 0!important;
+        background-color: transparent!important;
