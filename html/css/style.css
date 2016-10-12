@@ -950,10 +950,11 @@ h1 i {
   border-radius: 5px;
   line-height: 21px;
   height: 21px;
-  padding: 6px 5px 4px;
+  padding: 5px;
   margin: 0  auto;
   background-color: #eee;
   border: solid 1px #ddd;
+  background-repeat: no-repeat;
 }
 
 .game_content table tr td .select_group i {
