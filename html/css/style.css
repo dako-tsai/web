@@ -2612,4 +2612,85 @@ h1 i {
   background-color: transparent !important;
 }
 
+.hk_ball_room .sball_01,
+.hk_ball_room .sball_02,
+.hk_ball_room .sball_07,
+.hk_ball_room .sball_08,
+.hk_ball_room .sball_12,
+.hk_ball_room .sball_13,
+.hk_ball_room .sball_18,
+.hk_ball_room .sball_19,
+.hk_ball_room .sball_23,
+.hk_ball_room .sball_24,
+.hk_ball_room .sball_29,
+.hk_ball_room .sball_30,
+.hk_ball_room .sball_34,
+.hk_ball_room .sball_35,
+.hk_ball_room .sball_40,
+.hk_ball_room .sball_45,
+.hk_ball_room .sball_46,
+.hk_ball_room .sball_red {
+  background-image: url(../img/sball_red.png);
+  border: 0 !important;
+  background-color: transparent !important;
+}
+
+.hk_ball_room .sball {
+  display: block;
+  font-weight: bold;
+  border-radius: 100px;
+  line-height: 18px;
+  height: 18px;
+  background-color: #ddd;
+  border: solid 1px #aaa;
+  width: 18px;
+  text-align: center;
+  float: left;
+  margin-right: 0.25em;
+}
+
+.hk_ball_room .sball_03,
+.hk_ball_room .sball_04,
+.hk_ball_room .sball_09,
+.hk_ball_room .sball_10,
+.hk_ball_room .sball_14,
+.hk_ball_room .sball_15,
+.hk_ball_room .sball_20,
+.hk_ball_room .sball_25,
+.hk_ball_room .sball_26,
+.hk_ball_room .sball_31,
+.hk_ball_room .sball_36,
+.hk_ball_room .sball_37,
+.hk_ball_room .sball_41,
+.hk_ball_room .sball_42,
+.hk_ball_room .sball_47,
+.hk_ball_room .sball_48,
+.hk_ball_room .sball_blue {
+  background-image: url(../img/sball_blue.png);
+  border: 0 !important;
+  background-color: transparent !important;
+}
+
+.hk_ball_room .sball_05,
+.hk_ball_room .sball_06,
+.hk_ball_room .sball_11,
+.hk_ball_room .sball_16,
+.hk_ball_room .sball_17,
+.hk_ball_room .sball_21,
+.hk_ball_room .sball_22,
+.hk_ball_room .sball_27,
+.hk_ball_room .sball_28,
+.hk_ball_room .sball_32,
+.hk_ball_room .sball_33,
+.hk_ball_room .sball_38,
+.hk_ball_room .sball_39,
+.hk_ball_room .sball_43,
+.hk_ball_room .sball_44,
+.hk_ball_room .sball_49,
+.hk_ball_room .sball_green {
+  background-image: url(../img/sball_green.png);
+  border: 0 !important;
+  background-color: transparent !important;
+}
+
 /*# sourceMappingURL=style.css.map */
