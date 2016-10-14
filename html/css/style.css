@@ -920,13 +920,12 @@ h1 i {
 }
 
 .game_content table tr .td_border {
-  border-top: solid 1px #bbb;
-  border-bottom: solid 1px #bbb;
-  padding-top: 10px;
+  border-top: solid 1px #ccc;
+  padding-bottom: 10px;
 }
 
-.game_content table tr .td_border:first-child {
-  border-right: solid 1px #bbb;
+.game_content table tr .border_bottom {
+  border-bottom: solid 1px #ccc;
 }
 
 .game_content table tr td {
@@ -992,7 +991,12 @@ h1 i {
 }
 
 .game_content table tr td h4 > b {
+  color: #000;
+}
+
+.game_content table tr td h4 > em {
   color: #f91564;
+  font-style: normal;
 }
 
 .game_content table tr td ul {
@@ -1002,15 +1006,28 @@ h1 i {
 }
 
 .game_content table tr td ul > li {
-  height: 40px;
+  height: 32px;
+  float: left;
+  padding: 4px;
+  box-sizing: border-box;
+  width: 10%;
+}
+
+.game_content table tr td ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.game_content table tr td ol > li {
   float: left;
   padding: 10px;
   box-sizing: border-box;
-  width: 33%;
+  width: 20%;
 }
 
-.game_content table tr td ul > li:active, .game_content table tr td ul > li:focus {
-  background-color: #eee;
+.game_content table tr td ol > li > .color_m {
+  margin-top: 5px;
 }
 
 .game_content table tr .hover {
@@ -2692,6 +2709,31 @@ h1 i {
   background-image: url(../img/sball_green.png);
   border: 0 !important;
   background-color: transparent !important;
+}
+
+.game_time_out {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 101px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  color: #fff;
+}
+
+.game_time_out .game_time_clock {
+  position: absolute;
+  font-size: 16px;
+  margin: 0 auto;
+  top: calc(50% - 100px);
+  text-align: center;
+  width: 100%;
+}
+
+.game_time_out .game_time_clock p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

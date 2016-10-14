@@ -597,11 +597,10 @@ h1
             .td4
                 width: 50%;
             .td_border
-                border-top: solid 1px $colWB;
-                border-bottom: solid 1px $colWB;
-                padding-top: 10px;
-                &:first-child
-                    border-right: solid 1px $colWB;
+                border-top: solid 1px $colWC;
+                padding-bottom: 10px;
+            .border_bottom
+                border-bottom: solid 1px $colWC;
             td
                 box-sizing: border-box;
                 input
@@ -654,19 +653,31 @@ h1
                     width: 100%;
                     margin: 10px 0;
                     > b
+                        color: #000;
+                    > em
                         color: $colM;
+                        font-style: normal;
                 ul
                     margin: 0;
                     padding: 0;
                     list-style: none;
                     > li
-                        height: 40px;
+                        height: 32px;
+                        float: left;
+                        padding: 4px;
+                        box-sizing: border-box;
+                        width: 10%;
+                ol
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    > li
                         float: left;
                         padding: 10px;
                         box-sizing: border-box;
-                        width: 33%;
-                        &:active,&:focus
-                            background-color: #eee;
+                        width: 20%;
+                        > .color_m
+                            margin-top: 5px;
             .hover
                 background-color: #eee;
             .bottom_r
@@ -1890,3 +1901,23 @@ h1
         background-image: url(../img/sball_green.png);
         border: 0!important;
         background-color: transparent!important;
+.game_time_out
+    display: none;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 101px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    color: $colW;
+    .game_time_clock
+        position: absolute;
+        font-size: 16px;
+        margin: 0 auto;
+        top: calc(50% - 100px);
+        text-align: center;
+        width: 100%;
+        p
+            margin: 0;
+    
