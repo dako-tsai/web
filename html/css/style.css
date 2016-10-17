@@ -579,8 +579,7 @@ h1 i {
 
 .account .input_group input {
   color: #000;
-  border: 0;
-  border-bottom: solid 1px #ddd;
+  border: solid 1px #ddd;
 }
 
 .account h1 {
@@ -662,7 +661,7 @@ h1 i {
 
 .sign_up input, .sign_up select {
   border: 0;
-  border-bottom: solid 1px #ccc;
+  border: solid 1px #ccc;
 }
 
 .sign_up span {
@@ -937,7 +936,7 @@ h1 i {
   background-color: #fff;
   text-align: center;
   border: 0;
-  border-bottom: solid 1px #ccc;
+  border: solid 1px #ccc;
   width: 95%;
   padding: 5px;
   box-sizing: border-box;
@@ -1312,7 +1311,7 @@ h1 i {
   float: right;
   box-sizing: border-box;
   border: 0;
-  border-bottom: solid 1px #eee;
+  border: solid 1px #eee;
 }
 
 .my_porfile .my_p_box .input_group .left_7em {
@@ -1398,8 +1397,7 @@ h1 i {
   width: calc( 100% - 5em);
   float: right;
   box-sizing: border-box;
-  border: 0;
-  border-bottom: solid 1px #eee;
+  border: solid 1px #eee;
 }
 
 .withdraw .withdraw_box .input_group .left_7em {
@@ -2556,8 +2554,7 @@ h1 i {
   margin: 5px 0;
   background-color: #fff;
   text-align: center;
-  border: 0;
-  border-bottom: solid 1px #ccc;
+  border: solid 1px #ccc;
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
