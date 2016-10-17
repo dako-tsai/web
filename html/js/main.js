@@ -48,3 +48,9 @@ $(function () {
   });
   
 });
+
+$(function(){
+    $('.click_toggle').click(function(){
+        $(this).toggleClass('gray_bg');
+    });
+});
