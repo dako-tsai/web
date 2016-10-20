@@ -918,6 +918,10 @@ h1 i {
   width: 50%;
 }
 
+.game_content table tr .td5 {
+  width: 65%;
+}
+
 .game_content table tr .td_border {
   border-top: solid 1px #ccc;
   padding-bottom: 10px;
@@ -994,6 +998,24 @@ h1 i {
 }
 
 .game_content table tr td h4 > em {
+  color: #f91564;
+  font-style: normal;
+}
+
+.game_content table tr td h5 {
+  font-weight: normal;
+  color: #333;
+  width: 50%;
+  float: left;
+  display: block;
+  margin: 10px 0;
+}
+
+.game_content table tr td h5 > b {
+  color: #000;
+}
+
+.game_content table tr td h5 > em {
   color: #f91564;
   font-style: normal;
 }
@@ -2503,8 +2525,8 @@ h1 i {
   display: block;
   text-decoration: none;
   line-height: 16px;
-  margin: 5px 0;
-  width: 100%;
+  margin: 5px auto;
+  width: 60%;
   padding: 5px;
   box-sizing: border-box;
 }
@@ -2518,7 +2540,7 @@ h1 i {
 .pop_container .pop_list_box .pop_list_content table tr th .game_control_reset input {
   border: solid 1px #ccc;
   line-height: 14px;
-  width: 100%;
+  width: 60%;
 }
 
 .pop_container .pop_list_box .pop_list_content table tr .td1 {
@@ -2709,7 +2731,6 @@ h1 i {
 }
 
 .game_time_out {
-  display: none;
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 101px;
@@ -2735,6 +2756,177 @@ h1 i {
 
 .gray_bg {
   background-color: #eee;
+}
+
+.vertical_form {
+  vertical-align: top;
+}
+
+.vertical_form > ol {
+  width: 100%;
+  height: 38px;
+  overflow: hidden;
+  padding: 8px 0 !important;
+  box-sizing: border-box;
+  display: block;
+}
+
+.vertical_form > ol > li {
+  padding: 0 !important;
+}
+
+.vertical_form > ol .vf_1 {
+  width: 30%;
+}
+
+.vertical_form > ol .vf_2 {
+  width: 20%;
+}
+
+.vertical_form > ol .vf_3 {
+  width: 50%;
+}
+
+.vertical_form > ol .vf_3 > input {
+  margin: 0;
+}
+
+/*pk10*/
+.pk10_ball_room .ball_01 {
+  background-color: #fdfd31 !important;
+}
+
+.pk10_ball_room .ball_02 {
+  background-color: #7fcdee !important;
+}
+
+.pk10_ball_room .ball_03 {
+  background-color: #a3a3a3 !important;
+}
+
+.pk10_ball_room .ball_04 {
+  background-color: #fe5a24 !important;
+}
+
+.pk10_ball_room .ball_05 {
+  background-color: #00ffff !important;
+}
+
+.pk10_ball_room .ball_06 {
+  background-color: #be7dbc !important;
+}
+
+.pk10_ball_room .ball_07 {
+  background-color: #e6e6e6 !important;
+}
+
+.pk10_ball_room .ball_08 {
+  background-color: #ff6666 !important;
+}
+
+.pk10_ball_room .ball_09 {
+  background-color: #ae5f50 !important;
+}
+
+.pk10_ball_room .ball_10 {
+  background-color: #39b54a !important;
+}
+
+.pk10_ball_room .sball {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  display: block;
+  text-align: center;
+  float: left;
+  margin-right: 0.25em;
+  border-radius: 2px;
+}
+
+.pk10_ball_room .sball_01 {
+  background-color: #fdfd31 !important;
+}
+
+.pk10_ball_room .sball_02 {
+  background-color: #7fcdee !important;
+}
+
+.pk10_ball_room .sball_03 {
+  background-color: #a3a3a3 !important;
+}
+
+.pk10_ball_room .sball_04 {
+  background-color: #fe5a24 !important;
+}
+
+.pk10_ball_room .sball_05 {
+  background-color: #00ffff !important;
+}
+
+.pk10_ball_room .sball_06 {
+  background-color: #be7dbc !important;
+}
+
+.pk10_ball_room .sball_07 {
+  background-color: #e6e6e6 !important;
+}
+
+.pk10_ball_room .sball_08 {
+  background-color: #ff6666 !important;
+}
+
+.pk10_ball_room .sball_09 {
+  background-color: #ae5f50 !important;
+}
+
+.pk10_ball_room .sball_10 {
+  background-color: #39b54a !important;
+}
+
+.col_10 {
+  width: 10% !important;
+  padding: 10px 4px !important;
+}
+
+.col_20 {
+  width: 20% !important;
+}
+
+.col_30 {
+  width: 30% !important;
+}
+
+.col_40 {
+  width: 40% !important;
+}
+
+.col_50 {
+  width: 50% !important;
+}
+
+.col_60 {
+  width: 60% !important;
+}
+
+.col_70 {
+  width: 70% !important;
+}
+
+.col_80 {
+  width: 80% !important;
+}
+
+.col_90 {
+  width: 90% !important;
+}
+
+.col_100 {
+  width: 100% !important;
+}
+
+.grayBorder table th {
+  background-color: #bbb;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
