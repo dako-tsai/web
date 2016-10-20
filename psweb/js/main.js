@@ -6,7 +6,7 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
-$(".page-scroll").click(function() {
+$(".navbar-brand").click(function() {
     $('html,body').animate({
         scrollTop: $("#slider").offset().top},
         'slow');
@@ -27,7 +27,7 @@ $(".btn3").click(function() {
         scrollTop: $("#team").offset().top-50},
         'slow');
 });
-$(".btn4,btn_ps").click(function() {
+$(".btn4","btn_ps").click(function() {
     $('html,body').animate({
         scrollTop: $("#join").offset().top-50},
         'slow');
