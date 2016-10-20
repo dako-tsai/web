@@ -27,7 +27,7 @@ $(".btn3").click(function() {
         scrollTop: $("#team").offset().top-50},
         'slow');
 });
-$(".btn4","btn_ps").click(function() {
+$(".btn4",".btn_ps").click(function() {
     $('html,body').animate({
         scrollTop: $("#join").offset().top-50},
         'slow');
