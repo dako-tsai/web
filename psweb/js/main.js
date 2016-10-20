@@ -20,22 +20,22 @@ $(function() {
 
 $(".btn1").click(function() {
     $('html,body').animate({
-        scrollTop: $("#about").offset().top},
+        scrollTop: $("#about").offset().top-50},
         'slow');
 });
 $(".btn2").click(function() {
     $('html,body').animate({
-        scrollTop: $("#service").offset().top},
+        scrollTop: $("#service").offset().top-50},
         'slow');
 });
 $(".btn3").click(function() {
     $('html,body').animate({
-        scrollTop: $("#team").offset().top},
+        scrollTop: $("#team").offset().top-50},
         'slow');
 });
-$(".btn4").click(function() {
+$(".btn4,.btn_ps").click(function() {
     $('html,body').animate({
-        scrollTop: $("#join").offset().top},
+        scrollTop: $("#join").offset().top-50},
         'slow');
 });
 
