@@ -16,21 +16,25 @@ $(".btn1").click(function() {
     $('html,body').animate({
         scrollTop: $("#about").offset().top-50},
         'slow');
+    $('.navbar-collapse.in').collapse('hide');
 });
 $(".btn2").click(function() {
     $('html,body').animate({
         scrollTop: $("#service").offset().top-50},
         'slow');
+    $('.navbar-collapse.in').collapse('hide');
 });
 $(".btn3").click(function() {
     $('html,body').animate({
         scrollTop: $("#team").offset().top-50},
         'slow');
+    $('.navbar-collapse.in').collapse('hide');
 });
 $(".btn4,.btn_ps").click(function() {
     $('html,body').animate({
         scrollTop: $("#join").offset().top-50},
         'slow');
+    $('.navbar-collapse.in').collapse('hide');
 });
 
 jQuery(document).ready(function ($) {
