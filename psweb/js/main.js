@@ -82,12 +82,12 @@ jQuery(document).ready(function ($) {
 
 var scrolltotop={
 	setting:{
-		startline:42, //起始行
-		scrollto:0, //滾動到指定位置
-		scrollduration:400, //滾動過度
-		fadeduration:[500,100] // 淡入淡出
+		startline: 50, //起始行
+		scrollto: 0, //滾動到指定位置
+		scrollduration: 400, //滾動過度
+		fadeduration: [500,100] // 淡入淡出
 	},
-	controlHTML:'<img src="img/top.png" style="width:40px; height:40px;" alt="回到頂部" />', //返回顶部按钮
+	controlHTML:'<img class="gotop" src="img/top.png" style="width:40px; height:40px;" alt="回到頂部" />', //返回顶部按钮
 	controlattrs:{offsetx:"2%",offsety:"96px"},//返回按钮固定位置
 	anchorkeyword:"#top",
 	state:{
