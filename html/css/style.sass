@@ -23,8 +23,14 @@ $colB0: #000;
 $break-s: 480px;
 $break-m: 767px;
 $break-l: 1024px;
-
-
+.clear
+    clear: both;
+    border: 0;
+    margin: 0;
+    padding: 0;
+select
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
 html,body
     width: 100%;
     height: 100%;
@@ -56,6 +62,8 @@ h1
     display: block!important;
 .color_m
     color: $colM;
+.color_g
+    color: #44aa28;
 .input_group
     position: relative;
     max-width: 280px;
@@ -119,7 +127,7 @@ h1
         padding-right: 47px;
 .header2_box
     width: 100%;
-    padding-top: 101px;
+    padding-top: 84px;
 #nav_btn
     position: fixed;
     top: 0;
@@ -145,18 +153,18 @@ h1
         position: relative;
         display: block;
         transition: 0.2s ease-in-out;
-        &::after, &::before
+        &:after, &:before
             position: absolute;
             background-color: $colW;
             height: 2px;
             width: 20px;
             display: block;
             content: ' ';
-        &::after
+        &:after
             top: 7px;
             left: 0;
             right: 0;
-        &::before
+        &:before
             top: -7px;
             left: 0;
             right: 0;
@@ -164,11 +172,11 @@ h1
         #nav_img
             transition: 0.2s ease-in-out;
             background-color: rgba(255,255,255,0);
-            &::after
+            &:after
                 top: 0;
                 transform: rotateZ(45deg);
                 transition: 0.2s ease-in-out;
-            &::before
+            &:before
                 top: 0;
                 transform: rotateZ(-45deg);
                 transition: 0.2s ease-in-out;
@@ -247,12 +255,11 @@ h1
         padding-left: 5px;
 .select_game
     box-sizing: border-box;
-    padding: 0 10px 5px;
+    padding: 5px 10px;
     width: 100%;
-    height: 29x;
     background-color: $colW;
     position: fixed;
-    top: 72px;
+    top: 48px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     z-index: 5;
     ul
@@ -265,7 +272,7 @@ h1
         .img_box
             width: 24px;
         .select_box
-            width: calc(50% - 5px);
+            width: 49%;
             .select_group
                 i
                     bottom: 5px;
@@ -282,16 +289,15 @@ h1
                 appearance: none;
                 -webkit-appearance: none;
                 background-color: $colW;
-                width: 100%;
                 border-radius: 0;
                 box-sizing: border-box;
                 display: block;
                 float: left;
                 background-image: url(../img/select_arrow.png);
                 background-repeat: no-repeat;
-                background-position: right 5px top 5px;
+                background-position: right center;
         .center_box
-            width: 10px;
+            width: 2%;
             display: block;
             height: 24px;
 .online_service_btn
@@ -381,7 +387,7 @@ h1
         text-align: center;
         margin: 0 auto;
         .link_btn
-            color: $colWB;
+            color: $colM;
             text-decoration: none;
             padding: 0 1em;
             border-right: solid 1px $colWB;
@@ -442,7 +448,7 @@ h1
         font-size: 9px;
         margin: 5px 0 15px;
     .select_group
-        width: calc(50% - 5px);
+        width: 135px;
         float: left;
         margin-right: 10px;
         &:last-child
@@ -459,7 +465,7 @@ h1
         float: left;
         background-image: url(../img/select_arrow.png);
         background-repeat: no-repeat;
-        background-position: right 10px top 10px;
+        background-position: right center;
     .check_service
         overflow: hidden;
         width: 100%;
@@ -552,13 +558,13 @@ h1
 .game_content
     display: block;
     overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    margin: 10px 5px;
     table
-        width: calc(100% - 10px);
-        border-radius: 10px;
+        width: 100%;
         box-sizing: border-box;
-        margin: 5px;
         background-color: $colW;
-        box-shadow: 0 0 5px rgba(0,0,0,0.15);
         border-spacing: 0;
         border-collapse: separate;
         float: left;
@@ -614,11 +620,9 @@ h1
                     padding: 5px;
                     box-sizing: border-box;
                 .rounded_edges
-                    display: inline;
+                    display: inline-block;
                     font-weight: bold;
                     border-radius: 5px;
-                    line-height: 21px;
-                    height: 21px;
                     padding: 5px;
                     margin: 0  auto;
                     background-color: #eee;
@@ -646,7 +650,7 @@ h1
                         float: left;
                         background-image: url(../img/select_arrow.png);
                         background-repeat: no-repeat;
-                        background-position: right 5px top 5px;
+                        background-position: right center;
                         margin-bottom: 10px;
                 h4
                     font-weight: normal;
@@ -692,7 +696,7 @@ h1
                         > .color_m
                             margin-top: 5px;
             .hover
-                background-color: #eee;
+                background-color: #ffbbbb;
             .bottom_r
                 height: 10px;
                 border-radius: 0 0 10px 10px;
@@ -738,7 +742,7 @@ h1
         text-align: center;
         margin-right: 5px;
     .game_control_preset
-        height: 32px;
+        margin-top: 10px;
     .game_control_btn
         float: right;
         .game_control_submit
@@ -758,6 +762,12 @@ h1
                 position: absolute;
                 top: 9px;
                 right: 14px;
+        .disable
+            button
+                color: $colWB;
+                border: 1px solid $colWB;
+            i
+                color: $colWB;
         .game_control_reset
             float: left;
             position: relative;
@@ -805,7 +815,7 @@ h1
         li
             box-sizing: border-box;
             float: left;
-            width: 25%;
+            width: 50%;
             border-right: solid 1px $colW;
             padding: 0 0.5em;
             &:last-child
@@ -874,14 +884,14 @@ h1
                 float: left;
             input
                 padding: 10px 5px;
-                width: calc( 100% - 5em);
+                width: 220px
                 float: right;
                 box-sizing: border-box;
                 border: 0;
                 border: solid 1px $colWE;
             .left_7em
                 letter-spacing: 0;
-                width: calc( 100% - 7em);
+                width: 196px;
         .btn_a
             width: 100%;
             box-sizing: border-box;
@@ -894,7 +904,7 @@ h1
     background-color: $colW;
     .withdraw_box
         padding: 0 10px;
-        widows: 100%;
+        width: 100%;
         max-width: 720px;
         box-sizing: border-box;
         margin: 0 auto;
@@ -932,19 +942,17 @@ h1
             > labal
                 line-height: 33px;
                 display: block;
-                text-align: right;
+                text-align: center;
                 padding-right: 0.5em;
                 box-sizing: border-box;
                 float: left;
+                width: 20%;
             input
                 padding: 10px 5px;
-                width: calc( 100% - 5em);
+                width: 80%;
                 float: right;
                 box-sizing: border-box;
                 border: solid 1px $colWE;
-            .left_7em
-                letter-spacing: 0;
-                width: calc( 100% - 7em);
         .show_withdraw_list
             display: none;
             .hide_withdraw_list_btn
@@ -1016,6 +1024,26 @@ h1
         max-width: 720px;
         margin: 0 auto;
         list-style: none;
+        >h2 
+            display: block;
+            float: left;
+            width: 24%;
+            font-size: 12px;
+            background-color: $colWB;
+            color: #fff;
+            margin:  0 1% 0 0;
+            text-align: center;
+            padding: 5px 0;
+            &:first-letter
+                margin-right: 2px;
+        .clear
+            clear: both;
+        .step_box
+            button,input
+                width: 48%;
+                margin: 0 1%;
+                float: left;
+                
         >li
             margin-top: 10px;
             display: block;
@@ -1026,6 +1054,8 @@ h1
                 float: right;
                 font-size: 9px;
                 margin: 5px 0 15px;
+                width: 100%;
+                text-align: right;
             p
                 color: $colM;
                 text-align: right;
@@ -1063,7 +1093,7 @@ h1
             float: left;
             background-image: url(../img/select_arrow.png);
             background-repeat: no-repeat;
-            background-position: right 10px top 10px;
+            background-position: right center;
             border: 0;
             border-top: solid 1px $colWC;
             border-bottom: solid 1px $colWC;
@@ -1092,17 +1122,18 @@ h1
             > labal
                 line-height: 33px;
                 display: block;
-                text-align: justify;
+                text-align: center;
                 padding-right: 0.5em;
                 box-sizing: border-box;
                 float: left;
+                width: 20%;
             input
                 padding: 10px 5px;
-                width: calc( 100% - 5em );
+                width: 80%;
                 float: right;
                 box-sizing: border-box;
                 border: 0;
-                border-bottom: solid 1px $colWE;
+                border: solid 1px $colWE;
         .btn_a
             width: 100%;
             box-sizing: border-box;
@@ -1111,7 +1142,7 @@ h1
             
 .my_info
     overflow: hidden;
-    margin: 10px;
+    margin: 10px 10px 50px;
     background-color: $colW;
     > span
         padding: 0 10px;
@@ -1152,15 +1183,23 @@ h1
         padding: 10px;
         tr
             background-color: $colWE6;
+            th
+                background-color: $colWC;
+                text-align: left;
+                padding: 10px;
             td
                 padding: 10px;
                 word-wrap: break-word;
                 word-break: break-all;
+                > span
+                    font-weight: bold;
+                    color: #000;
+                > .btn_a
+                    padding: 5px 10px;
+                    text-decoration: none;
             .no_info
                 padding: 12em 0;
                 text-align: center;
-            :nth-of-type(even)
-                width: 75%;
         tr:nth-of-type(even)
             background-color: $colWF2;
     
@@ -1168,12 +1207,12 @@ h1
             
 .my_order
     overflow: hidden;
-    margin: 0 10px;
     position: fixed;
     top: 48px;
     z-index: 5;
-    width: calc( 100% - 20px);
-    padding-bottom: 10px;
+    width: 100%;
+    padding: 0 10px 10px;
+    box-sizing: border-box;
     border-top: solid 10px $colWF2;
     > span
         padding: 0 10px;
@@ -1185,7 +1224,7 @@ h1
         overflow: hidden
         li
             float: left;
-            width: calc( 100% / 3);
+            width: 33.3%;
             text-align: center;
             padding: 13px 0 15px;
             border-top: solid 2px $colWF2;
@@ -1195,7 +1234,6 @@ h1
             box-sizing: border-box;
         li:last-child
             border-right: 0;
-            
         .on_my_btn
             border-top: solid 2px $colM;
             background-color: $colW;
@@ -1243,7 +1281,7 @@ h1
             float: left;
             background-image: url(../img/select_arrow.png);
             background-repeat: no-repeat;
-            background-position: right 5px top 5px;
+            background-position: right center;
         .order_status
             width: 50%;
             box-sizing: border-box;
@@ -1273,6 +1311,10 @@ h1
                 padding: 10px;
                 word-wrap: break-word;
                 word-break: break-all;
+                b,em
+                    margin-left: 5px;
+                    font-style: normal;
+                    font-weight: normal;
             .no_info
                 padding: 12em 0;
                 text-align: center;
@@ -1284,12 +1326,12 @@ h1
 
 .my_wallet
     overflow: hidden;
-    margin: 0 10px;
     position: fixed;
     top: 48px;
     z-index: 5;
-    width: calc( 100% - 20px);
-    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px 10px;
     border-top: solid 10px $colWF2;
     > span
         padding: 0 10px;
@@ -1301,7 +1343,7 @@ h1
         overflow: hidden
         li
             float: left;
-            width: calc( 100% / 3);
+            width: 33.3%;
             text-align: center;
             padding: 13px 0 15px;
             border-top: solid 2px $colWF2;
@@ -1359,7 +1401,7 @@ h1
             float: left;
             background-image: url(../img/select_arrow.png);
             background-repeat: no-repeat;
-            background-position: right 5px top 5px;
+            background-position: right center;
         .wallet_status
             width: 50%;
             box-sizing: border-box;
@@ -1488,7 +1530,7 @@ h1
         float: left;
         background-image: url(../img/select_arrow.png);
         background-repeat: no-repeat;
-        background-position: right 5px top 5px;
+        background-position: right center;
     h1
         font-size: 1.2em;
     ul,ol
@@ -1527,7 +1569,7 @@ h1
         float: left;
         background-image: url(../img/select_arrow.png);
         background-repeat: no-repeat;
-        background-position: right 5px top 5px;
+        background-position: right center;
     table
         width: 100%;
         line-height: 1.5em;
@@ -1558,14 +1600,116 @@ h1
                     text-decoration: none;
         tr:nth-of-type(even)
             background-color: $colWF2;
-.article
+            
+            
+            
+            
+.awarddetail
     overflow: hidden;
-    margin: 0 10px;
     position: fixed;
     top: 48px;
     z-index: 5;
-    width: calc( 100% - 20px);
-    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px 10px;
+    border-top: solid 10px $colWF2;
+    > h2
+        background-color: $colW;
+        display: block;
+        margin: 0;
+        padding: 10px 10px 0;
+        i
+            font-size: 13px;
+            margin-right: 5px;
+    .awarddetail_ctrl
+        border-bottom: solid 10px $colW;
+        box-shadow: 0 5px 5px rgba( 0, 0, 0, 0.1);
+        background-color: $colW;
+        overflow: hidden;
+        >ul
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 10px 5px 0;
+            list-style: none;
+            >li
+                float: left;
+                display: block;
+            .select_1
+                width: 50%;
+                box-sizing: border-box;
+                padding: 0 5px;
+                float: left;
+            .select_2
+                width: 25%;
+                box-sizing: border-box;
+                padding: 0 5px;
+        select
+            border: solid 1px $colWC;
+            border-radius: 0;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: $colW;
+            padding: 5px;
+            float: left;
+            width: 100%;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: $colW;
+            width: 100%;
+            border-radius: 0;
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            background-image: url(../img/select_arrow.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+.award_list
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 72px 0 35px;
+    table
+        width: 100%;
+        line-height: 1.5em;
+        box-sizing: border-box;
+        background-color: $colW;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-bottom: solid 1px $colWF2;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+        padding: 10px;
+        border-bottom: solid 1px $colWE;
+        tr
+            background-color: $colW;
+            td
+                width: 25%;
+                padding: 5px;
+                word-wrap: break-word;
+                word-break: break-all;
+            th
+                background-color: $colW;
+                padding: 10px;
+                border-radius: 10px 10px 0 0;
+                .btn_a
+                    padding: 4px 8px;
+                    text-decoration: none;
+        tr:nth-of-type(odd)
+            background-color: $colWF2;
+                
+                
+                
+                
+                
+.article
+    overflow: hidden;
+    position: fixed;
+    top: 48px;
+    z-index: 5;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px 10px;
     border-top: solid 10px $colWF2;
     .article_ctrl
         border-bottom: solid 10px $colW;
@@ -1613,7 +1757,7 @@ h1
             float: left;
             background-image: url(../img/select_arrow.png);
             background-repeat: no-repeat;
-            background-position: right 5px top 5px;
+            background-position: right center;
 .article_list
     overflow: hidden;
     padding: 10px;
@@ -1629,6 +1773,8 @@ h1
         border-collapse: separate;
         border-bottom: solid 1px $colWF2;
         padding: 10px;
+        tbody
+            border-top: 1px #eee solid;
         tr
             background-color: $colWE6;
             th
@@ -1641,7 +1787,7 @@ h1
             .no_info
                 padding: 12em 0;
                 text-align: center;
-            :first-child
+            &:first-child
                 width: 60%;
         tr:nth-of-type(even)
             background-color: $colWF2;
@@ -1682,21 +1828,26 @@ h1
             display: block;
             width: 30%;
             margin: 0 auto;
+    .pop_content
+        padding: 10px;
+        ol
+            padding-left: 2em;
+        .btn_a
+            padding: 10px;
+            text-align: center;
     .pop_list_box
         background-color: #fff;
         padding: 10px 5px;
         overflow: hidden;
         position: absolute;
+        margin: 3%;
         z-index: 10;
-        left: 10px;
-        top: 10px;
-        width: calc(100% - 30px);
         .pop_list_content
+            padding: 5px;
             table
-                width: calc(100% - 10px);
+                width: 100%;
                 border-radius: 10px;
                 box-sizing: border-box;
-                margin: 5px;
                 background-color: $colW;
                 box-shadow: 0 0 5px rgba(0,0,0,0.15);
                 border-spacing: 0;
@@ -1792,8 +1943,10 @@ h1
     .ball_35,
     .ball_40,
     .ball_45,
-    .ball_46,
-    .ball_red
+    .ball_46
+        display: inline!important;
+        height: 21px;
+        line-height: 21px;
         background-image: url(../img/ball_red.png);
         border: 0!important;
         background-color: transparent!important;
@@ -1812,8 +1965,10 @@ h1
     .ball_41,
     .ball_42,
     .ball_47,
-    .ball_48,
-    .ball_blue
+    .ball_48
+        display: inline!important;
+        height: 21px;
+        line-height: 21px;
         background-image: url(../img/ball_blue.png);
         border: 0!important;
         background-color: transparent!important;
@@ -1832,11 +1987,22 @@ h1
     .ball_39,
     .ball_43,
     .ball_44,
-    .ball_49,
-    .ball_green
+    .ball_49
+        display: inline!important;
+        height: 21px;
+        line-height: 21px;
         background-image: url(../img/ball_green.png);
         border: 0!important;
         background-color: transparent!important;
+    .ball_red
+        background-color: #cb1d1d!important;
+        color: #fff!important;
+    .ball_blue
+        background-color: #1d6bcb!important;
+        color: #fff!important;
+    .ball_green
+        background-color: #44aa28!important;
+        color: #fff!important;
     
     .sball_01,
     .sball_02,
@@ -1914,7 +2080,7 @@ h1
 .game_time_out
     background-color: rgba(0, 0, 0, 0.75);
     position: fixed;
-    top: 101px;
+    top: 84px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -1923,8 +2089,8 @@ h1
     .game_time_clock
         position: absolute;
         font-size: 16px;
-        margin: 0 auto;
-        top: calc(50% - 100px);
+        margin: -100px auto 0;
+        top: 50%;
         text-align: center;
         width: 100%;
         p
@@ -1956,6 +2122,10 @@ h1
     
 /*pk10*/
 .pk10_ball_room
+    .rounded_edges
+        display: inline!important;
+        height: 21px;
+        line-height: 21px;
     .ball_01
         background-color: #fdfd31!important;
     .ball_02
@@ -2005,7 +2175,192 @@ h1
         background-color: #ae5f50!important;
     .sball_10
         background-color: #39b54a!important;
+/*pk10*/
+.ahk3_ball_room
+    .rounded_edges
+        display: inline!important;
+        height: 21px;
+        line-height: 21px;
+    .sj_1
+        background-image: url(../img/sj.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        padding: 4px 10px!important;
+    .sj_2
+        background-image: url(../img/sj.png);
+        background-position: 0 -21px;
+        background-repeat: no-repeat;
+        padding: 4px 10px!important;
+    .sj_3
+        background-image: url(../img/sj.png);
+        background-position: 0 -42px;
+        background-repeat: no-repeat;
+        padding: 4px 10px!important;
+    .sj_4
+        background-image: url(../img/sj.png);
+        background-position: 0 -63px;
+        background-repeat: no-repeat;
+        padding: 4px 10px!important;
+    .sj_5
+        background-image: url(../img/sj.png);
+        background-position: 0 -84px;
+        background-repeat: no-repeat;
+        padding: 4px 10px!important;
+    .sj_6
+        background-image: url(../img/sj.png);
+        background-position: 0 -105px;
+        background-repeat: no-repeat;
+        padding: 4px 10px!important;
+    
+    .sz_1
+        background-image: url(../img/sz.png);
+        background-position: 0 0px;
+        background-repeat: no-repeat;
+        padding: 2px 25px!important;
+    .sz_2
+        background-image: url(../img/sz.png);
+        background-position: 0 -16px;
+        background-repeat: no-repeat;
+        padding: 2px 25px!important;
+    .sz_3
+        background-image: url(../img/sz.png);
+        background-position: 0 -32px;
+        background-repeat: no-repeat;
+        padding: 2px 25px!important;
+    .sz_4
+        background-image: url(../img/sz.png);
+        background-position: 0 -48px;
+        background-repeat: no-repeat;
+        padding: 2px 25px!important;
+    .sz_5
+        background-image: url(../img/sz.png);
+        background-position: 0 -64px;
+        background-repeat: no-repeat;
+        padding: 2px 25px!important;
+    .sz_6
+        background-image: url(../img/sz.png);
+        background-position: 0 -80px;
+        background-repeat: no-repeat;
+        padding: 2px 25px!important;
+    .sz_all
+        background-image: url(../img/sz.png);
+        background-position: 0 -96px;
+        background-repeat: no-repeat;
+        padding: 2px 25px!important;
+        
+        
+    .cp_1_2
+        background-image: url(../img/cp.png);
+        background-position: 0 0px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_1_3
+        background-image: url(../img/cp.png);
+        background-position: 0 -17px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_1_4 
+        background-image: url(../img/cp.png);
+        background-position: 0 -34px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_1_5 
+        background-image: url(../img/cp.png);
+        background-position: 0 -51px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_1_6 
+        background-image: url(../img/cp.png);
+        background-position: 0 -68px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_2_3
+        background-image: url(../img/cp.png);
+        background-position: 0 -85px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_2_4 
+        background-image: url(../img/cp.png);
+        background-position: 0 -102px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_2_5 
+        background-image: url(../img/cp.png);
+        background-position: 0 -119px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_2_6 
+        background-image: url(../img/cp.png);
+        background-position: 0 -136px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_3_4
+        background-image: url(../img/cp.png);
+        background-position: 0 -153px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_3_5
+        background-image: url(../img/cp.png);
+        background-position: 0 -170px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_3_6
+        background-image: url(../img/cp.png);
+        background-position: 0 -187px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_4_5
+        background-image: url(../img/cp.png);
+        background-position: 0 -204px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_4_6
+        background-image: url(../img/cp.png);
+        background-position: 0 -221px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .cp_5_6
+        background-image: url(../img/cp.png);
+        background-position: 0 -238px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+        
+    .dp_1
+        background-image: url(../img/dp.png);
+        background-position: 0 0px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .dp_2
+        background-image: url(../img/dp.png);
+        background-position: 0 -17px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .dp_3
+        background-image: url(../img/dp.png);
+        background-position: 0 -34px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .dp_4
+        background-image: url(../img/dp.png);
+        background-position: 0 -51px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .dp_5
+        background-image: url(../img/dp.png);
+        background-position: 0 -68px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
+    .dp_6
+        background-image: url(../img/dp.png);
+        background-position: 0 -85px;
+        background-repeat: no-repeat;
+        padding: 3px 17px!important;
 
+    
+    
+.col_6_10
+    width: 16.6!important;
+    height: 41px;
 .col_10
     width: 10%!important;
     padding: 10px 4px!important;
@@ -2028,9 +2383,4 @@ h1
 .col_100
     width: 100%!important;
 
-.grayBorder
-    table
-        th
-            background-color: $colWB;
-            padding: 5px;
-        tr
+

@@ -38,10 +38,14 @@
       </ul><a href="login.html" class="sign_out">安全退出<i class="icon icon-logout-1"></i></a>
     </div>
     <div class="header2_box"></div>
-    <div class="show_money">
-      <div class="no_checkout">未结算金额<i>999999999.99</i></div>
-      <div class="win_lose">今日输赢<i>999999999.99</i></div>
-    </div>
+    <!--.show_money
+    .no_checkout
+        | 未结算金额
+        i 999999999.99
+    .win_lose
+        | 今日输赢
+        i 999999999.99
+    -->
     <div class="select_game">
       <ul>
         <li class="select_box">
@@ -83,7 +87,7 @@
         </li>
       </ul>
     </div>
-    <div style="display:none;" class="game_time_out">
+    <div class="game_time_out">
       <div class="game_time_clock"><img src="img/clock.gif"/>
         <p>封盘中请稍后下注</p>
       </div>
@@ -451,7 +455,7 @@
                 <button id="game_submit" type="button">添加</button><i class="icon icon-paperplane"></i>
               </div>
               <div class="game_control_reset">
-                <input type="reset" value="清除"/><i class="icon icon-reload"></i>
+                <input type="reset" value="重置"/><i class="icon icon-reload"></i>
               </div>
             </div>
           </div>

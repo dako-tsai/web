@@ -43,46 +43,71 @@
         <li class="my_btn on_my_btn">未读</li>
         <li class="my_btn">已读 </li>
       </ul>
-      <div id="unreadList" data-context="inbox.unread.list" class="grayBorder">
+      <div id="unreadList" data-context="inbox.unread.list" class="grayBorder"><!--未讀-->
         <table class="tableData">
-          <colgroup>
-            <col width="50"/>
-            <col width="50"/>
-            <col width="10"/>
-          </colgroup>
           <thead>
             <tr>
-              <th>时间</th>
-              <th>标题</th>
-              <th>查看</th>
+              <th class="col_30">时间</th>
+              <th class="col_50">标题</th>
+              <th class="col_20">查看</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>2016/01/01 PM05:45</td>
-              <td class="tl"><span>這是標題</span>
+              <td>2016/01/01<br>PM05:45</td>
+              <td><span>這是標題</span>
                 <p>這是內容</p>
               </td>
-              <td><a href="javascript:;">查看</a></td>
+              <td><a href="javascript:;" class="btn_a">查看</a></td>
             </tr>
             <tr>
               <td>2016/01/01 PM05:45</td>
-              <td class="tl"><span>這是標題</span>
+              <td><span>這是標題</span>
                 <p>這是內容</p>
               </td>
-              <td><a href="javascript:;">查看</a></td>
+              <td><a href="javascript:;" class="btn_a">查看</a></td>
             </tr>
           </tbody>
-          <tfoot data-bind="visible:items().length&gt;0" style="display:none;">
+          <tfoot data-bind="visible:items().length&gt;0">
             <tr>
+              <td colspan="3">{{ template "pager" . }}
+                <div data-bind="visible:items().length==0" class="noData"><i class="ico_book"></i><strong>没有任何记录</strong></div>
+              </td>
+            </tr>
+          </tfoot>
+        </table><!--已讀-->
+        <table class="tableData">
+          <thead>
+            <tr>
+              <th class="col_30">时间</th>
+              <th class="col_30">标题</th>
+              <th class="col_40">內容</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2016/01/01<br>PM05:45</td>
+              <td><span>這是標題</span></td>
               <td>
-                colspan="3"
-                {{ template "pager" . }}
+                <p>這是內容</p>
+              </td>
+            </tr>
+            <tr>
+              <td>2016/01/01 PM05:45</td>
+              <td><span>這是標題</span></td>
+              <td>
+                <p>這是內容</p>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot data-bind="visible:items().length&gt;0">
+            <tr>
+              <td colspan="3">{{ template "pager" . }}
+                <div data-bind="visible:items().length==0" class="noData"><i class="ico_book"></i><strong>没有任何记录</strong></div>
               </td>
             </tr>
           </tfoot>
         </table>
-        <div data-bind="visible:items().length==0" style="display:none;" class="noData"><i class="ico_book"></i><strong>没有任何记录          </strong></div>
       </div>
     </div>
     <div class="game_control"><a href="hk6.html" class="game_continue">继续下单<i class="icon icon-edit"></i></a></div>

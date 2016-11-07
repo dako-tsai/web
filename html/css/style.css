@@ -1,3 +1,15 @@
+.clear {
+  clear: both;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -61,6 +73,10 @@ h1 i {
 
 .color_m {
   color: #f91564;
+}
+
+.color_g {
+  color: #44aa28;
 }
 
 .input_group {
@@ -181,7 +197,7 @@ h1 i {
 
 .header2_box {
   width: 100%;
-  padding-top: 101px;
+  padding-top: 84px;
 }
 
 #nav_btn {
@@ -215,7 +231,7 @@ h1 i {
   transition: 0.2s ease-in-out;
 }
 
-#nav_btn #nav_img::after, #nav_btn #nav_img::before {
+#nav_btn #nav_img:after, #nav_btn #nav_img:before {
   position: absolute;
   background-color: #fff;
   height: 2px;
@@ -224,13 +240,13 @@ h1 i {
   content: ' ';
 }
 
-#nav_btn #nav_img::after {
+#nav_btn #nav_img:after {
   top: 7px;
   left: 0;
   right: 0;
 }
 
-#nav_btn #nav_img::before {
+#nav_btn #nav_img:before {
   top: -7px;
   left: 0;
   right: 0;
@@ -241,13 +257,13 @@ h1 i {
   background-color: rgba(255, 255, 255, 0);
 }
 
-#nav_btn.active #nav_img::after {
+#nav_btn.active #nav_img:after {
   top: 0;
   transform: rotateZ(45deg);
   transition: 0.2s ease-in-out;
 }
 
-#nav_btn.active #nav_img::before {
+#nav_btn.active #nav_img:before {
   top: 0;
   transform: rotateZ(-45deg);
   transition: 0.2s ease-in-out;
@@ -382,12 +398,11 @@ h1 i {
 
 .select_game {
   box-sizing: border-box;
-  padding: 0 10px 5px;
+  padding: 5px 10px;
   width: 100%;
-  height: 29x;
   background-color: #fff;
   position: fixed;
-  top: 72px;
+  top: 48px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   z-index: 5;
 }
@@ -408,7 +423,7 @@ h1 i {
 }
 
 .select_game ul .select_box {
-  width: calc(50% - 5px);
+  width: 49%;
 }
 
 .select_game ul .select_box .select_group i {
@@ -428,18 +443,17 @@ h1 i {
   appearance: none;
   -webkit-appearance: none;
   background-color: #fff;
-  width: 100%;
   border-radius: 0;
   box-sizing: border-box;
   display: block;
   float: left;
   background-image: url(../img/select_arrow.png);
   background-repeat: no-repeat;
-  background-position: right 5px top 5px;
+  background-position: right center;
 }
 
 .select_game ul .center_box {
-  width: 10px;
+  width: 2%;
   display: block;
   height: 24px;
 }
@@ -597,7 +611,7 @@ h1 i {
 }
 
 .account .account_other .link_btn {
-  color: #bbb;
+  color: #f91564;
   text-decoration: none;
   padding: 0 1em;
   border-right: solid 1px #bbb;
@@ -679,7 +693,7 @@ h1 i {
 }
 
 .sign_up .select_group {
-  width: calc(50% - 5px);
+  width: 135px;
   float: left;
   margin-right: 10px;
 }
@@ -700,7 +714,7 @@ h1 i {
   float: left;
   background-image: url(../img/select_arrow.png);
   background-repeat: no-repeat;
-  background-position: right 10px top 10px;
+  background-position: right center;
 }
 
 .sign_up .check_service {
@@ -841,15 +855,15 @@ h1 i {
 .game_content {
   display: block;
   overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 10px 5px;
 }
 
 .game_content table {
-  width: calc(100% - 10px);
-  border-radius: 10px;
+  width: 100%;
   box-sizing: border-box;
-  margin: 5px;
   background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   border-spacing: 0;
   border-collapse: separate;
   float: left;
@@ -947,11 +961,9 @@ h1 i {
 }
 
 .game_content table tr td .rounded_edges {
-  display: inline;
+  display: inline-block;
   font-weight: bold;
   border-radius: 5px;
-  line-height: 21px;
-  height: 21px;
   padding: 5px;
   margin: 0  auto;
   background-color: #eee;
@@ -982,7 +994,7 @@ h1 i {
   float: left;
   background-image: url(../img/select_arrow.png);
   background-repeat: no-repeat;
-  background-position: right 5px top 5px;
+  background-position: right center;
   margin-bottom: 10px;
 }
 
@@ -1052,7 +1064,7 @@ h1 i {
 }
 
 .game_content table tr .hover {
-  background-color: #eee;
+  background-color: #ffbbbb;
 }
 
 .game_content table tr .bottom_r {
@@ -1128,7 +1140,7 @@ h1 i {
 }
 
 .game_control .game_control_preset {
-  height: 32px;
+  margin-top: 10px;
 }
 
 .game_control .game_control_btn {
@@ -1156,6 +1168,15 @@ h1 i {
   position: absolute;
   top: 9px;
   right: 14px;
+}
+
+.game_control .game_control_btn .disable button {
+  color: #bbb;
+  border: 1px solid #bbb;
+}
+
+.game_control .game_control_btn .disable i {
+  color: #bbb;
 }
 
 .game_control .game_control_btn .game_control_reset {
@@ -1231,7 +1252,7 @@ h1 i {
 .other_link ul li {
   box-sizing: border-box;
   float: left;
-  width: 25%;
+  width: 50%;
   border-right: solid 1px #fff;
   padding: 0 0.5em;
 }
@@ -1329,7 +1350,7 @@ h1 i {
 
 .my_porfile .my_p_box .input_group input {
   padding: 10px 5px;
-  width: calc( 100% - 5em);
+  width: 220px;
   float: right;
   box-sizing: border-box;
   border: 0;
@@ -1338,7 +1359,7 @@ h1 i {
 
 .my_porfile .my_p_box .input_group .left_7em {
   letter-spacing: 0;
-  width: calc( 100% - 7em);
+  width: 196px;
 }
 
 .my_porfile .my_p_box .btn_a {
@@ -1356,7 +1377,7 @@ h1 i {
 
 .withdraw .withdraw_box {
   padding: 0 10px;
-  widows: 100%;
+  width: 100%;
   max-width: 720px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -1408,23 +1429,19 @@ h1 i {
 .withdraw .withdraw_box .input_group > labal {
   line-height: 33px;
   display: block;
-  text-align: right;
+  text-align: center;
   padding-right: 0.5em;
   box-sizing: border-box;
   float: left;
+  width: 20%;
 }
 
 .withdraw .withdraw_box .input_group input {
   padding: 10px 5px;
-  width: calc( 100% - 5em);
+  width: 80%;
   float: right;
   box-sizing: border-box;
   border: solid 1px #eee;
-}
-
-.withdraw .withdraw_box .input_group .left_7em {
-  letter-spacing: 0;
-  width: calc( 100% - 7em);
 }
 
 .withdraw .withdraw_box .show_withdraw_list {
@@ -1522,6 +1539,32 @@ h1 i {
   list-style: none;
 }
 
+.my_deposit .my_d_box > h2 {
+  display: block;
+  float: left;
+  width: 24%;
+  font-size: 12px;
+  background-color: #bbb;
+  color: #fff;
+  margin: 0 1% 0 0;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.my_deposit .my_d_box > h2:first-letter {
+  margin-right: 2px;
+}
+
+.my_deposit .my_d_box .clear {
+  clear: both;
+}
+
+.my_deposit .my_d_box .step_box button, .my_deposit .my_d_box .step_box input {
+  width: 48%;
+  margin: 0 1%;
+  float: left;
+}
+
 .my_deposit .my_d_box > li {
   margin-top: 10px;
   display: block;
@@ -1534,6 +1577,8 @@ h1 i {
   float: right;
   font-size: 9px;
   margin: 5px 0 15px;
+  width: 100%;
+  text-align: right;
 }
 
 .my_deposit .my_d_box > li p {
@@ -1587,7 +1632,7 @@ h1 i {
   float: left;
   background-image: url(../img/select_arrow.png);
   background-repeat: no-repeat;
-  background-position: right 10px top 10px;
+  background-position: right center;
   border: 0;
   border-top: solid 1px #ccc;
   border-bottom: solid 1px #ccc;
@@ -1625,19 +1670,20 @@ h1 i {
 .my_deposit .my_d_box .input_group > labal {
   line-height: 33px;
   display: block;
-  text-align: justify;
+  text-align: center;
   padding-right: 0.5em;
   box-sizing: border-box;
   float: left;
+  width: 20%;
 }
 
 .my_deposit .my_d_box .input_group input {
   padding: 10px 5px;
-  width: calc( 100% - 5em);
+  width: 80%;
   float: right;
   box-sizing: border-box;
   border: 0;
-  border-bottom: solid 1px #eee;
+  border: solid 1px #eee;
 }
 
 .my_deposit .my_d_box .btn_a {
@@ -1649,7 +1695,7 @@ h1 i {
 
 .my_info {
   overflow: hidden;
-  margin: 10px;
+  margin: 10px 10px 50px;
   background-color: #fff;
 }
 
@@ -1705,19 +1751,31 @@ h1 i {
   background-color: #e6e6e6;
 }
 
+.my_info table tr th {
+  background-color: #ccc;
+  text-align: left;
+  padding: 10px;
+}
+
 .my_info table tr td {
   padding: 10px;
   word-wrap: break-word;
   word-break: break-all;
 }
 
+.my_info table tr td > span {
+  font-weight: bold;
+  color: #000;
+}
+
+.my_info table tr td > .btn_a {
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
 .my_info table tr .no_info {
   padding: 12em 0;
   text-align: center;
-}
-
-.my_info table tr :nth-of-type(even) {
-  width: 75%;
 }
 
 .my_info table tr:nth-of-type(even) {
@@ -1726,12 +1784,12 @@ h1 i {
 
 .my_order {
   overflow: hidden;
-  margin: 0 10px;
   position: fixed;
   top: 48px;
   z-index: 5;
-  width: calc( 100% - 20px);
-  padding-bottom: 10px;
+  width: 100%;
+  padding: 0 10px 10px;
+  box-sizing: border-box;
   border-top: solid 10px #f2f2f2;
 }
 
@@ -1749,7 +1807,7 @@ h1 i {
 
 .my_order > ul li {
   float: left;
-  width: calc( 100% / 3);
+  width: 33.3%;
   text-align: center;
   padding: 13px 0 15px;
   border-top: solid 2px #f2f2f2;
@@ -1822,7 +1880,7 @@ h1 i {
   float: left;
   background-image: url(../img/select_arrow.png);
   background-repeat: no-repeat;
-  background-position: right 5px top 5px;
+  background-position: right center;
 }
 
 .my_order .order_panel_ctrl .order_status {
@@ -1866,6 +1924,12 @@ h1 i {
   word-break: break-all;
 }
 
+.order_list table tr td b, .order_list table tr td em {
+  margin-left: 5px;
+  font-style: normal;
+  font-weight: normal;
+}
+
 .order_list table tr .no_info {
   padding: 12em 0;
   text-align: center;
@@ -1881,12 +1945,12 @@ h1 i {
 
 .my_wallet {
   overflow: hidden;
-  margin: 0 10px;
   position: fixed;
   top: 48px;
   z-index: 5;
-  width: calc( 100% - 20px);
-  padding-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 10px;
   border-top: solid 10px #f2f2f2;
 }
 
@@ -1904,7 +1968,7 @@ h1 i {
 
 .my_wallet > ul li {
   float: left;
-  width: calc( 100% / 3);
+  width: 33.3%;
   text-align: center;
   padding: 13px 0 15px;
   border-top: solid 2px #f2f2f2;
@@ -1977,7 +2041,7 @@ h1 i {
   float: left;
   background-image: url(../img/select_arrow.png);
   background-repeat: no-repeat;
-  background-position: right 5px top 5px;
+  background-position: right center;
 }
 
 .my_wallet .wallet_panel_ctrl .wallet_status {
@@ -2162,7 +2226,7 @@ h1 i {
   float: left;
   background-image: url(../img/select_arrow.png);
   background-repeat: no-repeat;
-  background-position: right 5px top 5px;
+  background-position: right center;
 }
 
 .rule h1 {
@@ -2215,7 +2279,7 @@ h1 i {
   float: left;
   background-image: url(../img/select_arrow.png);
   background-repeat: no-repeat;
-  background-position: right 5px top 5px;
+  background-position: right center;
 }
 
 .award table {
@@ -2260,14 +2324,139 @@ h1 i {
   background-color: #f2f2f2;
 }
 
-.article {
+.awarddetail {
   overflow: hidden;
-  margin: 0 10px;
   position: fixed;
   top: 48px;
   z-index: 5;
-  width: calc( 100% - 20px);
-  padding-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 10px;
+  border-top: solid 10px #f2f2f2;
+}
+
+.awarddetail > h2 {
+  background-color: #fff;
+  display: block;
+  margin: 0;
+  padding: 10px 10px 0;
+}
+
+.awarddetail > h2 i {
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.awarddetail .awarddetail_ctrl {
+  border-bottom: solid 10px #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.awarddetail .awarddetail_ctrl > ul {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px 5px 0;
+  list-style: none;
+}
+
+.awarddetail .awarddetail_ctrl > ul > li {
+  float: left;
+  display: block;
+}
+
+.awarddetail .awarddetail_ctrl > ul .select_1 {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 5px;
+  float: left;
+}
+
+.awarddetail .awarddetail_ctrl > ul .select_2 {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.awarddetail .awarddetail_ctrl select {
+  border: solid 1px #ccc;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  padding: 5px;
+  float: left;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  background-image: url(../img/select_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.award_list {
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 72px 0 35px;
+}
+
+.award_list table {
+  width: 100%;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-bottom: solid 1px #f2f2f2;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-bottom: solid 1px #eee;
+}
+
+.award_list table tr {
+  background-color: #fff;
+}
+
+.award_list table tr td {
+  width: 25%;
+  padding: 5px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.award_list table tr th {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.award_list table tr th .btn_a {
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.award_list table tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.article {
+  overflow: hidden;
+  position: fixed;
+  top: 48px;
+  z-index: 5;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 10px;
   border-top: solid 10px #f2f2f2;
 }
 
@@ -2329,7 +2518,7 @@ h1 i {
   float: left;
   background-image: url(../img/select_arrow.png);
   background-repeat: no-repeat;
-  background-position: right 5px top 5px;
+  background-position: right center;
 }
 
 .article_list {
@@ -2349,6 +2538,10 @@ h1 i {
   border-collapse: separate;
   border-bottom: solid 1px #f2f2f2;
   padding: 10px;
+}
+
+.article_list table tbody {
+  border-top: 1px #eee solid;
 }
 
 .article_list table tr {
@@ -2371,7 +2564,7 @@ h1 i {
   text-align: center;
 }
 
-.article_list table tr :first-child {
+.article_list table tr:first-child {
   width: 60%;
 }
 
@@ -2444,22 +2637,36 @@ h1 i {
   margin: 0 auto;
 }
 
+.pop_container .pop_content {
+  padding: 10px;
+}
+
+.pop_container .pop_content ol {
+  padding-left: 2em;
+}
+
+.pop_container .pop_content .btn_a {
+  padding: 10px;
+  text-align: center;
+}
+
 .pop_container .pop_list_box {
   background-color: #fff;
   padding: 10px 5px;
   overflow: hidden;
   position: absolute;
+  margin: 3%;
   z-index: 10;
-  left: 10px;
-  top: 10px;
-  width: calc(100% - 30px);
+}
+
+.pop_container .pop_list_box .pop_list_content {
+  padding: 5px;
 }
 
 .pop_container .pop_list_box .pop_list_content table {
-  width: calc(100% - 10px);
+  width: 100%;
   border-radius: 10px;
   box-sizing: border-box;
-  margin: 5px;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   border-spacing: 0;
@@ -2598,8 +2805,10 @@ h1 i {
 .hk_ball_room .ball_35,
 .hk_ball_room .ball_40,
 .hk_ball_room .ball_45,
-.hk_ball_room .ball_46,
-.hk_ball_room .ball_red {
+.hk_ball_room .ball_46 {
+  display: inline !important;
+  height: 21px;
+  line-height: 21px;
   background-image: url(../img/ball_red.png);
   border: 0 !important;
   background-color: transparent !important;
@@ -2620,8 +2829,10 @@ h1 i {
 .hk_ball_room .ball_41,
 .hk_ball_room .ball_42,
 .hk_ball_room .ball_47,
-.hk_ball_room .ball_48,
-.hk_ball_room .ball_blue {
+.hk_ball_room .ball_48 {
+  display: inline !important;
+  height: 21px;
+  line-height: 21px;
   background-image: url(../img/ball_blue.png);
   border: 0 !important;
   background-color: transparent !important;
@@ -2642,11 +2853,28 @@ h1 i {
 .hk_ball_room .ball_39,
 .hk_ball_room .ball_43,
 .hk_ball_room .ball_44,
-.hk_ball_room .ball_49,
-.hk_ball_room .ball_green {
+.hk_ball_room .ball_49 {
+  display: inline !important;
+  height: 21px;
+  line-height: 21px;
   background-image: url(../img/ball_green.png);
   border: 0 !important;
   background-color: transparent !important;
+}
+
+.hk_ball_room .ball_red {
+  background-color: #cb1d1d !important;
+  color: #fff !important;
+}
+
+.hk_ball_room .ball_blue {
+  background-color: #1d6bcb !important;
+  color: #fff !important;
+}
+
+.hk_ball_room .ball_green {
+  background-color: #44aa28 !important;
+  color: #fff !important;
 }
 
 .hk_ball_room .sball_01,
@@ -2733,7 +2961,7 @@ h1 i {
 .game_time_out {
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
-  top: 101px;
+  top: 84px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -2744,8 +2972,8 @@ h1 i {
 .game_time_out .game_time_clock {
   position: absolute;
   font-size: 16px;
-  margin: 0 auto;
-  top: calc(50% - 100px);
+  margin: -100px auto 0;
+  top: 50%;
   text-align: center;
   width: 100%;
 }
@@ -2792,6 +3020,12 @@ h1 i {
 }
 
 /*pk10*/
+.pk10_ball_room .rounded_edges {
+  display: inline !important;
+  height: 21px;
+  line-height: 21px;
+}
+
 .pk10_ball_room .ball_01 {
   background-color: #fdfd31 !important;
 }
@@ -2883,6 +3117,256 @@ h1 i {
   background-color: #39b54a !important;
 }
 
+/*pk10*/
+.ahk3_ball_room .rounded_edges {
+  display: inline !important;
+  height: 21px;
+  line-height: 21px;
+}
+
+.ahk3_ball_room .sj_1 {
+  background-image: url(../img/sj.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding: 4px 10px !important;
+}
+
+.ahk3_ball_room .sj_2 {
+  background-image: url(../img/sj.png);
+  background-position: 0 -21px;
+  background-repeat: no-repeat;
+  padding: 4px 10px !important;
+}
+
+.ahk3_ball_room .sj_3 {
+  background-image: url(../img/sj.png);
+  background-position: 0 -42px;
+  background-repeat: no-repeat;
+  padding: 4px 10px !important;
+}
+
+.ahk3_ball_room .sj_4 {
+  background-image: url(../img/sj.png);
+  background-position: 0 -63px;
+  background-repeat: no-repeat;
+  padding: 4px 10px !important;
+}
+
+.ahk3_ball_room .sj_5 {
+  background-image: url(../img/sj.png);
+  background-position: 0 -84px;
+  background-repeat: no-repeat;
+  padding: 4px 10px !important;
+}
+
+.ahk3_ball_room .sj_6 {
+  background-image: url(../img/sj.png);
+  background-position: 0 -105px;
+  background-repeat: no-repeat;
+  padding: 4px 10px !important;
+}
+
+.ahk3_ball_room .sz_1 {
+  background-image: url(../img/sz.png);
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+  padding: 2px 25px !important;
+}
+
+.ahk3_ball_room .sz_2 {
+  background-image: url(../img/sz.png);
+  background-position: 0 -16px;
+  background-repeat: no-repeat;
+  padding: 2px 25px !important;
+}
+
+.ahk3_ball_room .sz_3 {
+  background-image: url(../img/sz.png);
+  background-position: 0 -32px;
+  background-repeat: no-repeat;
+  padding: 2px 25px !important;
+}
+
+.ahk3_ball_room .sz_4 {
+  background-image: url(../img/sz.png);
+  background-position: 0 -48px;
+  background-repeat: no-repeat;
+  padding: 2px 25px !important;
+}
+
+.ahk3_ball_room .sz_5 {
+  background-image: url(../img/sz.png);
+  background-position: 0 -64px;
+  background-repeat: no-repeat;
+  padding: 2px 25px !important;
+}
+
+.ahk3_ball_room .sz_6 {
+  background-image: url(../img/sz.png);
+  background-position: 0 -80px;
+  background-repeat: no-repeat;
+  padding: 2px 25px !important;
+}
+
+.ahk3_ball_room .sz_all {
+  background-image: url(../img/sz.png);
+  background-position: 0 -96px;
+  background-repeat: no-repeat;
+  padding: 2px 25px !important;
+}
+
+.ahk3_ball_room .cp_1_2 {
+  background-image: url(../img/cp.png);
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_1_3 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -17px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_1_4 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -34px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_1_5 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -51px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_1_6 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -68px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_2_3 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -85px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_2_4 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -102px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_2_5 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -119px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_2_6 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -136px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_3_4 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -153px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_3_5 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -170px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_3_6 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -187px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_4_5 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -204px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_4_6 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -221px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .cp_5_6 {
+  background-image: url(../img/cp.png);
+  background-position: 0 -238px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .dp_1 {
+  background-image: url(../img/dp.png);
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .dp_2 {
+  background-image: url(../img/dp.png);
+  background-position: 0 -17px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .dp_3 {
+  background-image: url(../img/dp.png);
+  background-position: 0 -34px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .dp_4 {
+  background-image: url(../img/dp.png);
+  background-position: 0 -51px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .dp_5 {
+  background-image: url(../img/dp.png);
+  background-position: 0 -68px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.ahk3_ball_room .dp_6 {
+  background-image: url(../img/dp.png);
+  background-position: 0 -85px;
+  background-repeat: no-repeat;
+  padding: 3px 17px !important;
+}
+
+.col_6_10 {
+  width: 16.6 !important;
+  height: 41px;
+}
+
 .col_10 {
   width: 10% !important;
   padding: 10px 4px !important;
@@ -2922,11 +3406,6 @@ h1 i {
 
 .col_100 {
   width: 100% !important;
-}
-
-.grayBorder table th {
-  background-color: #bbb;
-  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

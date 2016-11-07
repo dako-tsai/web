@@ -54,3 +54,14 @@ $(function(){
         $(this).toggleClass('gray_bg');
     });
 });
+
+
+$(function(){
+    $('.next_step').click(function(){
+        $(this).parents("li").fadeOut(0).next().fadeIn();
+    });
+    $('.prev_step').click(function(){
+        $(this).parents("li").fadeOut(0).prev().fadeIn();
+    });
+});
+

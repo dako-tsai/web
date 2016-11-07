@@ -45,7 +45,11 @@
       </ul><span>你好!<b>abcdefgh</b>!</span>
       <form action="my.html" class="my_form">
         <!--公司入款-->
-        <ol class="my_d_box hide_block">
+        <ol style="display:none;" class="my_d_box">
+          <h2>1转帐资料</h2>
+          <h2>2支付方式</h2>
+          <h2>3完成</h2>
+          <div class="clear"></div>
           <li>
             <h3>1.请填写您的转帐资料</h3>
             <div class="input_group">
@@ -53,8 +57,9 @@
               <input type="text" placeholder="金额请带小数，更快处理。"/><i class="icon icon-banknote"></i>
             </div>
             <p>*请输入数字</p>
+            <button type="button" class="btn_a next_step">下一步</button>
           </li>
-          <li>
+          <li style="display:none;">
             <h3>2.请选择支付方式</h3>
             <ol>
               <li>
@@ -64,19 +69,31 @@
                 <input type="radio" name="bank"/><b>微信支付</b>
               </li>
             </ol>
+            <div class="step_box">        
+              <button type="button" class="btn_a prev_step">上一步</button>
+              <button type="button" class="btn_a next_step">下一步</button>
+            </div>
           </li>
-          <li>
+          <li style="display:none;">
             <h3>3.请选择你要参与的优惠活动</h3>
             <ol>
               <li>
-                <input type="radio" name="coupon"/><b>微信支付</b><em class="color_m">优惠：12.13 / 流水：1倍</em>
+                <input type="radio" name="coupon"/><b>微信支付</b>
               </li>
             </ol>
+            <div class="step_box">        
+              <button type="button" class="btn_a prev_step">上一步</button>
+              <input type="submit" value="提　　交" class="btn_a"/>
+            </div>
           </li>
-          <input type="submit" value="提　　交" class="btn_a"/>
         </ol>
         <!--線上入款-->
         <ol class="my_d_box">
+          <h2>1转帐资料</h2>
+          <h2>2使用银行</h2>
+          <h2>3转账资料</h2>
+          <h2>4完成转帐</h2>
+          <div class="clear"></div>
           <li>
             <h3>1.请选择您欲转入的银行帐号</h3>
             <select>
@@ -129,16 +146,21 @@
                 <td>开户行：新疆喀什分行人民东路</td>
               </tr>
             </table>
+            <button type="button" class="btn_a next_step">下一步</button>
           </li>
-          <li>
+          <li style="display:none;">
             <h3>2.请选择您所使用的银行</h3>
             <select>
               <option>中国建设银行</option>
               <option>中国工商银行</option>
               <option>中国农业银行</option>
             </select><span>选择[中国农业银行]转帐可立即到帐喔！</span>
+            <div class="step_box">        
+              <button type="button" class="btn_a prev_step">上一步</button>
+              <button type="button" class="btn_a next_step">下一步</button>
+            </div>
           </li>
-          <li>
+          <li style="display:none;">
             <h3>3.请填写您的转帐资料</h3>
             <div class="input_group">
               <labal>存入时间</labal>
@@ -160,8 +182,12 @@
               <input type="text" placeholder="请填写汇款卡号"/><i class="icon icon-key"></i>
             </div>
             <p>*请输入汇款卡号</p>
+            <div class="step_box">        
+              <button type="button" class="btn_a prev_step">上一步</button>
+              <button type="button" class="btn_a next_step">下一步</button>
+            </div>
           </li>
-          <li>
+          <li style="display:none;">
             <h3>4.请选择存款方式完成转帐</h3>
             <ol>
               <li>
@@ -180,17 +206,17 @@
                 <input type="radio" name="bank"/><b>手机银行转帐<br></b><em>通过您的手机验证将款项转到上述的银行帐号。</em>
               </li>
             </ol>
-          </li>
-          <li>
-            <h3>5.请选择你要参与的优惠活动</h3>
             <ol>
               <li>
+                <h3>请选择你要参与的优惠活动</h3>
                 <input type="radio" name="coupon"/><b>网银转帐</b><em class="color_m">优惠：12.13 / 流水：1倍</em>
               </li>
             </ol>
+            <div class="step_box">        
+              <button type="button" class="btn_a prev_step">上一步</button>
+              <input type="submit" value="提　　交" class="btn_a"/>
+            </div>
           </li>
-          <input type="submit" value="提　　交" class="btn_a"/>
-          <div class="copyright">公司版权所有©2011-2016<br>好运国际提醒您：理性购彩，热心公益。<br>未满18周岁的未成年人禁止购彩及兑奖！</div>
         </ol>
       </form>
     </div>
