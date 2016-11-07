@@ -20,6 +20,7 @@ body {
   font-size: 11px;
   line-height: 1.2em;
   color: #000;
+  position: absolute;
 }
 
 .overflow_hidden {
@@ -208,10 +209,7 @@ h1 i {
   width: 48px;
   z-index: 20;
   background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: block;
   cursor: pointer;
   border: 0;
   outline: 0;
@@ -225,6 +223,7 @@ h1 i {
 #nav_btn #nav_img {
   height: 2px;
   width: 20px;
+  margin: 0 auto;
   background-color: #fff;
   position: relative;
   display: block;
