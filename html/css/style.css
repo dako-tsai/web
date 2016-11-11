@@ -1275,6 +1275,10 @@ h1 i {
   margin: 10px;
   background-color: #fff;
   position: absolute;
+  top: 48px;
+  bottom: 48px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .my_porfile > span {
