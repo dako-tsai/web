@@ -20,7 +20,6 @@ body {
   font-size: 11px;
   line-height: 1.2em;
   color: #000;
-  position: absolute;
 }
 
 .overflow_hidden {
@@ -1275,6 +1274,7 @@ h1 i {
   overflow: hidden;
   margin: 10px;
   background-color: #fff;
+  position: absolute;
 }
 
 .my_porfile > span {
