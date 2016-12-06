@@ -61,4 +61,12 @@ $(document).ready(function () {
   $('.show-alert , .show-list').click(function(){
     $('.alert-message').fadeIn();
   });
+  
+  $('.hide-inbox-message').click(function(){
+    $('.inbox-message').fadeOut();
+  });
+  $('.show-inbox-message').click(function(){
+    $('.inbox-message').fadeIn();
+  });
+  
 });
