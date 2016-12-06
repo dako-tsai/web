@@ -39,76 +39,35 @@
     <div class="main">
       <div class="wrapper">
         <div class="main-left">
-          <div class="main-title user">会员专区</div>
+          <div class="main-title user">
+            <p>会员专区</p>
+          </div>
           <div class="profile">
             <h1>您好,<b>Administrator</b></h1><span>账户总额(RMB): 1013854.12</span>
             <div class="btn">充值</div>
             <div class="btn2">提现</div>
           </div>
           <ul class="my-nav">
-            <li><a href="wallet.html">我的钱包</a></li>
-            <li><a href="order.html" class="active">投注记录</a></li>
-            <li><a href="profile.html">我的资料</a></li>
-            <li><a href="inbox.html">我的消息</a></li>
-          </ul><a href="#"></a>
+            <li class="nav-money"><a href="wallet.html">我的钱包</a></li>
+            <li class="nav-list active"><a href="order.html" class="active">投注记录</a></li>
+            <li class="nav-info"><a href="profile.html">我的资料</a></li>
+            <li class="nav-inbox"><a href="inbox.html">我的消息
+                <div class="badge">1</div></a></li>
+          </ul>
+          <div class="btn2 show-full">缩小选单</div>
+          <div class="hide-full">放大<br>选单</div>
         </div>
         <div class="main-right">
           <div class="service_btn"><a href="http://messenger.providesupport.com/messenger/0r2sowcjtv8vx08k1aqurlbeci.html" target="_blank"> <img src="img/btn1.png">在线客服</a><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=86339230&amp;site=qq&amp;menu=yes"><img src="img/btn2.png">客服QQ</a></div>
           <div class="main-title list">投注记录</div>
           <ul class="main-content-nav">
-            <li data-tab="tab1" class="active">AG</li>
-            <li data-tab="tab2">彩票</li>
+            <li data-tab="tab1" class="active">彩票</li>
+            <li data-tab="tab2">AG</li>
             <li data-tab="tab3">体育</li>
             <li data-tab="tab4">其他</li>
           </ul>
-          <!--AG-->
-          <div id="tab1" class="main-content active">
-            <div class="top-nav">
-              <div class="top-nav-left">
-                <label class="date-label">日期</label>
-                <input type="text" placeholder="請選擇日期" value="2016-12-04 00:00" class="date-input">
-                <label class="date-label">至</label>
-                <input type="text" placeholder="請選擇日期" value="2016-12-04 00:00" class="date-input">
-                <input type="submit" value="送出" class="btn">
-              </div>
-              <div class="top-nav-right"><a href="#" class="btn2 active">今天</a><a href="#" class="btn2">本周</a><a href="#" class="btn2">本月</a></div>
-            </div>
-            <div class="select-box"></div>
-            <div class="order-list">
-              <table class="tableData">
-                <colgroup>
-                  <col width="180">
-                  <col width="120">
-                  <col width="160">
-                  <col width="80">
-                  <col width="80">
-                  <col width="90">
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th>单号</th>
-                    <th>彩种</th>
-                    <th>信息</th>
-                    <th>金额</th>
-                    <th>码量</th>
-                    <th>状态</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td colspan="6" class="no-info">您目前没有任何讯息</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="order-pager">
-              <div id="fcase_page">第<span class="active">1</span>页共<span class="active">1</span>页
-                总<span class="active">21</span>条<span><span class="gray-line">|</span><a href="javascript:" class="disabled">首页</a><span class="gray-line">|</span><a href="javascript:" class="disabled"><<</a><span class="gray-line">|</span><a href="javascript:" class="active">1</a><span class="gray_line">|</span><a href="javascript:" class="disabled">>></a><span class="gray_line">|</span><a href="javascript:" class="disabled">尾页</a></span>
-              </div>
-            </div>
-          </div>
           <!--彩票-->
-          <div id="tab2" class="main-content">
+          <div id="tab1" class="main-content active">
             <div class="top-nav">
               <div class="top-nav-left">
                 <label class="date-label">日期</label>
@@ -147,7 +106,7 @@
                 <colgroup>
                   <col width="180">
                   <col width="120">
-                  <col width="160">
+                  <col width="180">
                   <col width="80">
                   <col width="80">
                   <col width="90">
@@ -224,6 +183,52 @@
               </div>
             </div>
           </div>
+          <!--AG-->
+          <div id="tab2" class="main-content">
+            <div class="top-nav">
+              <div class="top-nav-left">
+                <label class="date-label">日期</label>
+                <input type="text" placeholder="請選擇日期" value="2016-12-04 00:00" class="date-input">
+                <label class="date-label">至</label>
+                <input type="text" placeholder="請選擇日期" value="2016-12-04 00:00" class="date-input">
+                <input type="submit" value="送出" class="btn">
+              </div>
+              <div class="top-nav-right"><a href="#" class="btn2 active">今天</a><a href="#" class="btn2">本周</a><a href="#" class="btn2">本月</a></div>
+            </div>
+            <div class="select-box"></div>
+            <div class="order-list">
+              <table class="tableData">
+                <colgroup>
+                  <col width="180">
+                  <col width="120">
+                  <col width="180">
+                  <col width="80">
+                  <col width="80">
+                  <col width="90">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>单号</th>
+                    <th>彩种</th>
+                    <th>信息</th>
+                    <th>金额</th>
+                    <th>码量</th>
+                    <th>状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="6" class="no-info">您目前没有任何讯息</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="order-pager">
+              <div id="fcase_page">第<span class="active">1</span>页共<span class="active">1</span>页
+                总<span class="active">21</span>条<span><span class="gray-line">|</span><a href="javascript:" class="disabled">首页</a><span class="gray-line">|</span><a href="javascript:" class="disabled"><<</a><span class="gray-line">|</span><a href="javascript:" class="active">1</a><span class="gray_line">|</span><a href="javascript:" class="disabled">>></a><span class="gray_line">|</span><a href="javascript:" class="disabled">尾页</a></span>
+              </div>
+            </div>
+          </div>
           <!--体育-->
           <div id="tab3" class="main-content">
             <div class="top-nav">
@@ -242,7 +247,7 @@
                 <colgroup>
                   <col width="180">
                   <col width="120">
-                  <col width="160">
+                  <col width="180">
                   <col width="80">
                   <col width="80">
                   <col width="90">
@@ -288,7 +293,7 @@
                 <colgroup>
                   <col width="180">
                   <col width="120">
-                  <col width="160">
+                  <col width="180">
                   <col width="80">
                   <col width="80">
                   <col width="90">
@@ -318,6 +323,14 @@
           </div>
           <div class="main-footer">好运国际提醒您：理性购彩制定博彩预算，并按照预算进行下注，严禁病态赌博。未满18周岁的未成年人禁止购彩及兑奖！<br>24小时在线客服 QQ：86339230 Email：haoyuncaipiao@gmail.com </div>
         </div>
+      </div>
+    </div>
+    <div class="full-order-list">
+      <div class="black-bg"></div>
+      <div class="full-order-main">
+        <h6>测试标题测试标题测试标题测试标题测试标题测试标题</h6>
+        <div class="full-order-content">测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容测试內容</div>
+        <div class="hide-inbox-message btn">确认关闭</div>
       </div>
     </div>
     <div class="footer">

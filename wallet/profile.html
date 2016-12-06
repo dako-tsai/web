@@ -39,18 +39,23 @@
     <div class="main">
       <div class="wrapper">
         <div class="main-left">
-          <div class="main-title user">会员专区</div>
+          <div class="main-title user">
+            <p>会员专区</p>
+          </div>
           <div class="profile">
             <h1>您好,<b>Administrator</b></h1><span>账户总额(RMB): 1013854.12</span>
             <div class="btn">充值</div>
             <div class="btn2">提现</div>
           </div>
           <ul class="my-nav">
-            <li><a href="wallet.html">我的钱包</a></li>
-            <li><a href="order.html">投注记录</a></li>
-            <li><a href="profile.html" class="active">我的资料</a></li>
-            <li><a href="inbox.html">我的消息</a></li>
-          </ul><a href="#"></a>
+            <li class="nav-money"><a href="wallet.html">我的钱包</a></li>
+            <li class="nav-list"><a href="order.html">投注记录</a></li>
+            <li class="nav-info active"><a href="profile.html" class="active">我的资料</a></li>
+            <li class="nav-inbox"><a href="inbox.html">我的消息
+                <div class="badge">1</div></a></li>
+          </ul>
+          <div class="btn2 show-full">缩小选单</div>
+          <div class="hide-full">放大<br>选单</div>
         </div>
         <div class="main-right">
           <div class="main-title info">我的资料</div>
@@ -195,7 +200,7 @@
       </div>
     </div>
     <div class="alert-message">
-      <div class="alert-bg"></div>
+      <div class="black-bg"></div>
       <div class="alert-content">
         <h6>您所填入的资料有误</h6>
         <p><i>*</i>开户姓名为必填栏位</p>

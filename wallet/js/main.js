@@ -69,4 +69,11 @@ $(document).ready(function () {
     $('.inbox-message').fadeIn();
   });
   
+  
+  $('.show-full').click(function(){
+    $('.main').removeClass('main').addClass('main-full');
+  });
+  $('.hide-full').click(function(){
+    $('.main-full').removeClass('main-full').addClass('main');
+  })
 });
