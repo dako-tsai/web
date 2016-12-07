@@ -70,6 +70,10 @@ body {
   background: url(../img/deposit.jpg) top 120px right 10%;
 }
 
+.bg4 {
+  background: url(../img/chips.jpg) top 160px right 0;
+}
+
 .service_btn {
   position: fixed;
   position: absolute\9;
@@ -630,21 +634,32 @@ form {
 }
 
 .transfer {
-  margin: 0 0 0 20px;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+}
+
+.transfer .refresh {
+  background: url(../img/refresh.png) #bbb;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  right: -34px;
+  top: 170px;
 }
 
 .transfer h1 {
   font-size: 15px;
-  width: 60%;
-  text-align: center;
-  margin: 10px 0;
+  width: 100%;
+  text-align: left;
+  margin: 20px 0 10px;
 }
 
 .transfer .table-1 {
   border-spacing: 0;
   border-collapse: collapse;
   border: 0;
-  width: 420px;
+  width: 100%;
   padding: 0;
   margin: 0;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
@@ -653,7 +668,7 @@ form {
 .transfer .table-1 th {
   border: 0;
   margin: 0;
-  background: #aaa;
+  background: #bbb;
   padding: 10px;
   color: #fff;
 }
@@ -661,7 +676,7 @@ form {
 .transfer .table-1 .td-1 {
   border: 0;
   margin: 0;
-  background: #f2f2f2;
+  background: #fbfbfb;
   padding: 20px 10px;
   text-align: center;
 }
@@ -688,7 +703,7 @@ form {
   text-align: center;
   padding: 10px;
   width: 20%;
-  background: #ddd;
+  background: #e7e7e7;
 }
 
 .transfer .table-1 .td-2 p {
@@ -697,7 +712,7 @@ form {
 
 .transfer .table-1 .td-3 {
   text-align: center;
-  background: #f2f2f2;
+  background: #fbfbfb;
   padding: 10px;
 }
 
@@ -712,7 +727,6 @@ form {
 
 .transfer .table-1 .th20 {
   width: 20%;
-  background-color: #bbb;
 }
 
 .top-nav {
