@@ -1,0 +1,43 @@
+.news {
+    width: 100%;
+    .title {
+        font-size: 14px;
+        line-height: 30px;
+        border-bottom: solid 1px #333;
+        margin: 5px 0;
+        .icon_news {
+            background-image: url("../img/announce.png");
+            background-repeat: no-repeat;
+            background-position: 6px 6px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .more {
+            float: right;
+            color: #999;
+            text-decoration: none;
+            &:hover {
+                color: $default_color;
+            }
+        }
+    }
+    .news_list {
+        .news_list_item {
+            display: inline-block;
+            margin-top: 10px;
+            color: #333;
+            width: 100%;
+            text-decoration: none;
+            &:hover {
+                color: $default_color;
+            }
+            .date {
+                float: right;
+                color: #999;
+            }
+        }
+    }
+
+}

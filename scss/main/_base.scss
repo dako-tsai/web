@@ -1,0 +1,23 @@
+*{
+    @include box-sizing;
+}
+
+$w: 996px;
+$default_color: #036eb6;
+$default_color_d: darken($default_color,10);
+
+%w_center{
+    width: $w;
+    margin: 0 auto;
+}
+
+%ul_reset{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-size: 12px;
+    background-color: #f0f0f0;
+}

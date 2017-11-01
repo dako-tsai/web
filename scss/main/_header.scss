@@ -1,0 +1,138 @@
+.header {
+    width: 100%;
+    background-color: #fff;
+    .top_nav {
+        .w {
+            @extend %w_center;
+            .link {
+                float: right;
+                width: 120px;
+                font-size: 0;
+                & > a {
+                    color: #333;
+                    text-decoration: none;
+                    font-size: 12px;
+                    line-height: 30px;
+                    display: inline-block;
+                    padding-left: 5px;
+                    &:hover {
+                        color: $default_color;
+                    }
+                }
+            }
+            .marquee {
+                vertical-align: middle;
+                line-height: 30px;
+                height: 30px;
+                float: left;
+                width: $w - 120;
+                .title {
+                    width: 100px;
+                    float: left;
+                    .icon_news {
+                        background-image: url(../img/announce.png);
+                        background-repeat: no-repeat;
+                        background-position: 6px 6px;
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+                marquee {
+                    width: $w - 220;
+                    float: left;
+                    color: $default_color;
+                }
+            }
+        }
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        background: #ebebeb;
+    }
+    .middle_nav {
+        margin: 10px 0;
+        .w {
+            @extend %w_center;
+            .logo {
+                width: 180px;
+            }
+        }
+    }
+    .nav {
+        width: 100%;
+        background-color: $default_color;
+        z-index: 1;
+        .w {
+            @extend %w_center;
+            .nav_item {
+                padding: 15px 20px;
+                text-decoration: none;
+                color: #fff;
+                display: inline-block;
+                font-size: 14px;
+                &.active,
+                &:hover {
+                    background-color: $default_color_d;
+                }
+                &.mobile {
+                    float: right;
+                    background-color: $default_color_d;
+                }
+                .news {
+                    position: absolute;
+                    display: block;
+                    top: -10px;
+                    right: 0;
+                    width: 25px;
+                    height: 27px;
+                    background-image: url(../img/news.png);
+                }
+                &.more {
+                    &:hover {
+                        background-color: #fff;
+                        color: $default_color;
+                        padding-top: 14px;
+                        border-top: solid 1px $default_color;
+                    }
+                    &:hover .sub_nav{
+                        display: inherit;
+                    }
+                }
+            }
+            .sub_nav {
+                display: none;
+                position: absolute;
+                margin-top: 15px;
+                width: 100%;
+                background-color: #fff;
+                left: 0;
+                z-index: 2;
+                @include box-shadow(0 5px 5px rgba(0, 0, 0, 0.15));
+                .row {
+                    @extend %w_center;
+                    font-size: 0;
+                    line-height: 30px;
+                    border-bottom: solid 1px #eee;
+                    padding: 0 10px;
+                    & > h1 {
+                        font-size: 14px;
+                        color: #333;
+                        display: inline-block;
+                        margin-right: 20px;
+                    }
+                    .item {
+                        font-size: 12px;
+                        color: #666;
+                        text-decoration: none;
+                        margin-right: 10px;
+                        &:hover {
+                            color: $default_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

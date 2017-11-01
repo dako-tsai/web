@@ -1,0 +1,191 @@
+.container {
+    @extend %w_center;
+    @include clearfix;
+    padding: 10px 0;
+}
+
+.left_main {
+    width: 752px;
+    float: left;
+    .top_info {
+        padding: 10px;
+        @include clearfix;
+        background-color: #fff;
+        .banner {
+            width: 432px;
+            height: 180px;
+            float: left;
+        }
+        .news_container {
+            float: left;
+            width: 300px;
+            padding-left: 10px;
+            height: 180px;
+        }
+    }
+    .game_list {
+        @include clearfix;
+        font-size: 0;
+        margin-bottom: 10px;
+        background-color: #fff;
+        .game_list_item {
+            padding: 10px 0 10px 0;
+            width: 94px;
+            display: inline-block;
+            font-size: 12px;
+            text-align: center;
+            color: #333;
+            text-decoration: none;
+            border-top: solid 1px #eee;
+            border-right: solid 1px #eee;
+            &>img{
+                width: 52px;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+            & > span {
+                display: block;
+            }
+            &:hover{
+                background: $default_color;
+                color: #fff;
+                @include transition(.6s);
+            }
+        }
+    }
+
+    .game_info {
+        padding: 10px 10px 0 10px;
+        .logo {
+            width: 70px;
+            display: inline-block;
+        }
+        .info {
+            display: inline-block;
+            padding-left: 10px;
+            & > h1 {
+                font-size: 14px;
+            }
+            & > h2 {
+                font-weight: normal;
+                color: #999;
+                font-size: 12px;
+            }
+            & > h3 {
+                font-weight: normal;
+                color: #999;
+                font-size: 12px;
+                .time {
+                    display: inline-block;
+                    color: #de0846;
+                }
+            }
+        }
+    }
+    .game_result {
+        padding: 0 10px 10px;
+        .result {
+            @extend %ul_reset;
+            margin-bottom: 10px;
+            & > li {
+                background-color: $default_color;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                color: #fff;
+                @include border-radius(100%);
+            }
+        }
+        & > table {
+            width: 100%;
+            border: solid 1px #eee;
+            th {
+                color: #de0846;
+            }
+            th,
+            td {
+                border: solid 1px #eee;
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+    }
+    .lottery_record {
+        margin: 0 -5px;
+        .w {
+            width: 50%;
+            padding: 0 5px 10px;
+            float: left;
+        }
+        .card {
+            background-color: #fff;
+            &:hover {
+                @include box-shadow(0 0 15px rgba(0, 0, 0, 0.15));
+                @include transition(.3s);
+            }
+            .link {
+                width: 100%;
+                font-size: 0;
+                & > a {
+                    width: 25%;
+                    display: inline-block;
+                    font-size: 12px;
+                    text-align: center;
+                    border-top: solid 1px #eee;
+                    border-right: solid 1px #eee;
+                    text-decoration: none;
+                    color: #333;
+                    padding: 10px 0;
+                    &:hover {
+                        color: $default_color;
+                        background-color: #f2f2f2;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.right_main {
+    width: 232px;
+    float: right;
+    &>div{
+        margin-bottom: 10px;
+    }
+    .qrcode {
+        text-align: center;
+        background-color: #fff;
+        padding: 12px 10px 11px;
+        .title {
+            color: #999;
+            & > p {
+                font-weight: bold;
+                font-size: 14px;
+                margin: 5px 0;
+                color: #333;
+            }
+        }
+    }
+    .news_container {
+        width: 100%;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .advertising{
+        width: 100%;
+        &>img{
+            width: 100%;
+        }
+    }
+    .analytics{
+        padding: 10px;
+        width: 100%;
+        background-color: #fff;
+    }
+}
