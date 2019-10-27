@@ -1,0 +1,75 @@
+{
+  "_class": "bitmap",
+  "booleanOperation": -1,
+  "clippingMask": "{{0, 0}, {1, 1}}",
+  "clippingMaskMode": 0,
+  "do_objectID": "57B05152-4BD1-4140-A465-0BA62C0FEEF7",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "do_objectID": "90F30525-5D36-48B6-BF64-02B25E46600F",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "fillReplacesImage": false,
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": true,
+    "do_objectID": "5EEF1443-B387-4CB7-8ACA-AA23EDCA1790",
+    "height": 24,
+    "width": 24,
+    "x": 142,
+    "y": 6
+  },
+  "hasClippingMask": false,
+  "image": {
+    "_class": "MSJSONFileReference",
+    "_ref": "images/a3c64bd7eaaf71a9783e08bdce2e033b5d3c7565.png",
+    "_ref_class": "MSImageData"
+  },
+  "intendedDPI": 72,
+  "isFixedToViewport": false,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 0,
+  "name": "1200px-Regional_Emblem_of_Macau.svg",
+  "nameIsFixed": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "do_objectID": "242EAE40-A7F9-4E13-B91C-4C7F574CF77A",
+    "endMarkerType": 0,
+    "miterLimit": 10,
+    "startMarkerType": 0,
+    "windingRule": 1
+  },
+  "userInfo": {
+    "com.animaapp.stc-sketch-plugin": {
+      "kModelPropertiesKey": {
+        "constraints": {
+          "aspectRatio": {
+            "constant": 1200,
+            "enabled": 1,
+            "modelID": "constraint_c6cc1901-79ae-4bf1-b8dd-9d756732c091",
+            "model_class": "ADModelConstraint",
+            "model_version": 0,
+            "multiplier": 1200
+          },
+          "automatic": 1,
+          "modelID": "viewConstraints_2b6d5dd2-35fb-49f1-bcfa-3039bbadef3b",
+          "model_class": "ADModelViewConstraints",
+          "model_version": 0,
+          "scaleFactor": 1
+        }
+      }
+    }
+  }
+}

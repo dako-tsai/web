@@ -1,0 +1,166 @@
+{
+  "_class": "group",
+  "booleanOperation": -1,
+  "clippingMaskMode": 0,
+  "do_objectID": "1C2C9EDC-0486-406F-99ED-E8D21971FF40",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "do_objectID": "70DED027-DC9C-4EA5-BA14-8975EE726FE2",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": true,
+    "do_objectID": "349D9467-D11C-4C3D-8C70-91FD38DA2334",
+    "height": 42,
+    "width": 42,
+    "x": 0,
+    "y": 0
+  },
+  "groupLayout": {
+    "_class": "MSImmutableFreeformGroupLayout",
+    "do_objectID": "9C7B72E6-C500-4958-8456-D2B50D0848AE"
+  },
+  "hasClickThrough": false,
+  "hasClippingMask": false,
+  "isFixedToViewport": false,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 0,
+  "layers": [
+    {
+      "class": "rectangle",
+      "id": "E0E107E2-F13C-45E2-A610-803D9B692714"
+    },
+    {
+      "class": "oval",
+      "id": "75D66B29-C390-47C0-8B7E-B82483992B3B"
+    },
+    {
+      "class": "shapePath",
+      "id": "A27A5DDE-09E8-43DB-B514-C9B59498B526"
+    },
+    {
+      "class": "shapePath",
+      "id": "08218AB5-2152-4AB3-9501-CD3F083C3ADD"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "E9464157-76B7-46F8-B4D2-D59181F2D9C0"
+    },
+    {
+      "class": "shapePath",
+      "id": "A8E85455-E9AE-4567-9471-9449036D0262"
+    },
+    {
+      "class": "shapePath",
+      "id": "614F02B5-9FA6-4044-ADF2-1C863D7627AD"
+    },
+    {
+      "class": "shapePath",
+      "id": "30B222A0-3F66-447F-A7C8-5D3D15593548"
+    },
+    {
+      "class": "shapePath",
+      "id": "CF19C371-EA4A-4311-9527-C469D2A050A2"
+    },
+    {
+      "class": "shapePath",
+      "id": "5FD1891B-2303-4974-830F-2BF2C756C66F"
+    },
+    {
+      "class": "shapePath",
+      "id": "AD8F4D29-494C-46DC-A4F9-EA9326E9CA0E"
+    },
+    {
+      "class": "shapePath",
+      "id": "CC722545-86A9-433B-A0AA-AA2D423708F3"
+    },
+    {
+      "class": "shapePath",
+      "id": "6A24F283-6B88-4851-8D25-80B9EDB73CD1"
+    },
+    {
+      "class": "shapePath",
+      "id": "A8BA80BB-3543-47CA-A68E-87774C24B049"
+    },
+    {
+      "class": "shapePath",
+      "id": "8A73D043-C357-4679-A24D-5690854ED1A2"
+    },
+    {
+      "class": "shapePath",
+      "id": "10D92064-3DC0-4B6A-9DF3-C3F1D888CC3A"
+    },
+    {
+      "class": "shapePath",
+      "id": "49085F49-8420-4405-9147-E845AE5A26EA"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "0F2669F6-9D37-4D85-8444-83228FB52784"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "E678A2A8-289A-42C0-99AC-0C2418E14DDA"
+    },
+    {
+      "class": "shapePath",
+      "id": "4268A1FE-2DB8-4339-9E55-906B14DB7199"
+    },
+    {
+      "class": "shapePath",
+      "id": "77403C8E-B94E-4BAA-AC0F-3ED710816BC3"
+    },
+    {
+      "class": "shapePath",
+      "id": "9872F1E3-78AB-4E52-A9F7-D9762596CF45"
+    },
+    {
+      "class": "shapePath",
+      "id": "239FC12D-FBC0-49BB-9345-1FA42C7002BC"
+    }
+  ],
+  "name": "c-04",
+  "nameIsFixed": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "do_objectID": "DCD30B07-48F1-43A9-AB9F-A99EB74E9C52",
+    "endMarkerType": 0,
+    "miterLimit": 10,
+    "startMarkerType": 0,
+    "windingRule": 1
+  },
+  "userInfo": {
+    "com.animaapp.stc-sketch-plugin": {
+      "kModelPropertiesKey": {
+        "constraints": {
+          "aspectRatio": {
+            "constant": 42,
+            "enabled": 1,
+            "modelID": "constraint_8773105e-9e0a-4ca3-8774-543c4487c3bd",
+            "model_class": "ADModelConstraint",
+            "model_version": 0,
+            "multiplier": 42
+          },
+          "automatic": 1,
+          "modelID": "viewConstraints_5f3025ab-e6b9-4ce4-8b4e-0510edb7f856",
+          "model_class": "ADModelViewConstraints",
+          "model_version": 0,
+          "scaleFactor": 1
+        }
+      }
+    }
+  }
+}

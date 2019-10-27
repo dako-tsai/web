@@ -1,0 +1,78 @@
+{
+  "_class": "group",
+  "booleanOperation": -1,
+  "clippingMaskMode": 0,
+  "do_objectID": "DD1BA81A-7B9B-4E9E-A78F-C3D6967DFE60",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": true,
+    "height": 210,
+    "width": 235.2,
+    "x": 803,
+    "y": 1078
+  },
+  "groupLayout": {
+    "_class": "MSImmutableFreeformGroupLayout"
+  },
+  "hasClickThrough": false,
+  "hasClippingMask": false,
+  "isFixedToViewport": false,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 2,
+  "layers": [
+    {
+      "class": "rectangle",
+      "id": "9BABC9EB-D392-48B4-A03B-25CEE17B56E4"
+    },
+    {
+      "class": "bitmap",
+      "id": "27721B91-97B0-4102-A7CB-0BA5546D2EB9"
+    }
+  ],
+  "name": "Mockup",
+  "nameIsFixed": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "endMarkerType": 0,
+    "miterLimit": 10,
+    "startMarkerType": 0,
+    "windingRule": 1
+  },
+  "userInfo": {
+    "com.animaapp.stc-sketch-plugin": {
+      "kModelPropertiesKey": {
+        "constraints": {
+          "aspectRatio": {
+            "constant": 210,
+            "enabled": 1,
+            "modelID": "constraint_a03b36c5-d3dd-4724-8522-861a2ab85ea2",
+            "model_class": "ADModelConstraint",
+            "model_version": 0,
+            "multiplier": 235.2
+          },
+          "automatic": 1,
+          "modelID": "viewConstraints_200a274c-a676-4189-9d52-926d1594a9fd",
+          "model_class": "ADModelViewConstraints",
+          "model_version": 0,
+          "scaleFactor": 1
+        }
+      }
+    }
+  }
+}

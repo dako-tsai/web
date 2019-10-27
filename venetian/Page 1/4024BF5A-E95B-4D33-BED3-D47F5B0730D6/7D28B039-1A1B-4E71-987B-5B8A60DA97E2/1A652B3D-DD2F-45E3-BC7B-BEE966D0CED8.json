@@ -1,0 +1,75 @@
+{
+  "_class": "bitmap",
+  "booleanOperation": -1,
+  "clippingMask": "{{0, 0}, {1, 1}}",
+  "clippingMaskMode": 0,
+  "do_objectID": "1A652B3D-DD2F-45E3-BC7B-BEE966D0CED8",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "do_objectID": "396258BD-4BE7-4826-BD07-4FD5C11FBDEC",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "fillReplacesImage": false,
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": true,
+    "do_objectID": "CFD7F121-C6EF-431A-8590-3C35A79E44B0",
+    "height": 36,
+    "width": 107.25,
+    "x": 134,
+    "y": 50
+  },
+  "hasClippingMask": false,
+  "image": {
+    "_class": "MSJSONFileReference",
+    "_ref": "images/b82e165a9530c6c5d260b4ac77d483f1636d62fc.png",
+    "_ref_class": "MSImageData"
+  },
+  "intendedDPI": 72,
+  "isFixedToViewport": false,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 0,
+  "name": "venetian-logo-1 copy",
+  "nameIsFixed": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "do_objectID": "7A4C2401-4E62-4A74-A94E-F78F2F56C895",
+    "endMarkerType": 0,
+    "miterLimit": 10,
+    "startMarkerType": 0,
+    "windingRule": 1
+  },
+  "userInfo": {
+    "com.animaapp.stc-sketch-plugin": {
+      "kModelPropertiesKey": {
+        "constraints": {
+          "aspectRatio": {
+            "constant": 36,
+            "enabled": 1,
+            "modelID": "constraint_3cc2eeef-3633-4502-8e49-eaf6438f0ea5",
+            "model_class": "ADModelConstraint",
+            "model_version": 0,
+            "multiplier": 107.25
+          },
+          "automatic": 1,
+          "modelID": "viewConstraints_bb084e90-89e3-4c64-8aec-d5f5dcc61a07",
+          "model_class": "ADModelViewConstraints",
+          "model_version": 0,
+          "scaleFactor": 1
+        }
+      }
+    }
+  }
+}

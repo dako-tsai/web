@@ -1,0 +1,116 @@
+{
+  "_class": "shapeGroup",
+  "booleanOperation": -1,
+  "clippingMaskMode": 0,
+  "do_objectID": "7E9527D1-21CA-4CC9-A16A-6CE33A2D272B",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "do_objectID": "F6EE550A-FA2D-4DF0-8A3E-68E01D550D1E",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": false,
+    "do_objectID": "D4003D8B-D4EB-4945-B3A0-9DE501EBDCDB",
+    "height": 26,
+    "width": 26.00000000000011,
+    "x": 99.99999999999994,
+    "y": 20
+  },
+  "groupLayout": {
+    "_class": "MSImmutableFreeformGroupLayout",
+    "do_objectID": "0CE11107-1358-4257-A22E-5B9176761742"
+  },
+  "hasClickThrough": false,
+  "hasClippingMask": false,
+  "isFixedToViewport": false,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 1,
+  "layers": [
+    {
+      "class": "shapePath",
+      "id": "D7829F98-07F9-46A1-9DFE-A8CDCB5B11A3"
+    },
+    {
+      "class": "shapePath",
+      "id": "42897C72-4A36-4AED-BE80-FB46336A493A"
+    },
+    {
+      "class": "shapePath",
+      "id": "508E5D55-18ED-4E8D-AF6F-F88C6BD72EE8"
+    },
+    {
+      "class": "shapePath",
+      "id": "4B2BB33A-5E50-4F9A-AB21-6D8F4F6292AC"
+    },
+    {
+      "class": "shapePath",
+      "id": "52C5673C-7813-40D9-84BE-F1ECA56E613B"
+    },
+    {
+      "class": "shapePath",
+      "id": "DC35AF4A-9480-41C0-AB59-E598B3984238"
+    },
+    {
+      "class": "shapePath",
+      "id": "B2B08F8E-5646-4399-9BE0-935D5FC97D2E"
+    },
+    {
+      "class": "shapePath",
+      "id": "49D43B02-47D6-433D-83C6-145D40E79000"
+    },
+    {
+      "class": "shapePath",
+      "id": "895D3C45-6B0A-43EF-9199-8D80D1D84144"
+    },
+    {
+      "class": "shapePath",
+      "id": "C907CD45-5AD3-4FDF-9FA0-9ED68F6F4DA8"
+    },
+    {
+      "class": "shapePath",
+      "id": "28B336E1-CC71-4F0D-A59F-F0DAE96EFAB1"
+    }
+  ],
+  "name": "Shape Copy",
+  "nameIsFixed": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "do_objectID": "89266943-8A4F-4559-A036-B5CF6EC48920",
+    "endMarkerType": 0,
+    "fills": [
+      {
+        "_class": "fill",
+        "color": {
+          "_class": "color",
+          "alpha": 1,
+          "blue": 1,
+          "green": 1,
+          "red": 1
+        },
+        "fillType": 0,
+        "isEnabled": true,
+        "noiseIndex": 0,
+        "noiseIntensity": 0,
+        "patternFillType": 1,
+        "patternTileScale": 1
+      }
+    ],
+    "miterLimit": 10,
+    "startMarkerType": 0,
+    "windingRule": 0
+  },
+  "windingRule": 0
+}

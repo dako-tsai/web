@@ -1,0 +1,166 @@
+{
+  "_class": "group",
+  "booleanOperation": -1,
+  "clippingMaskMode": 0,
+  "do_objectID": "3875E9F5-7AB4-4AAB-8057-59B9D4B2216B",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "do_objectID": "936A76E0-3B07-4041-AA36-7E30CBE9BAA2",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": true,
+    "do_objectID": "87CFBFA3-4416-459D-9078-CB6D65125A33",
+    "height": 42,
+    "width": 42,
+    "x": 0,
+    "y": 0
+  },
+  "groupLayout": {
+    "_class": "MSImmutableFreeformGroupLayout",
+    "do_objectID": "0F548733-B96D-48F5-87F5-366702E12B46"
+  },
+  "hasClickThrough": false,
+  "hasClippingMask": false,
+  "isFixedToViewport": false,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 0,
+  "layers": [
+    {
+      "class": "rectangle",
+      "id": "6E684999-6134-40F8-9CE3-B815EAB228A8"
+    },
+    {
+      "class": "oval",
+      "id": "F2F874AA-668C-4054-8DF1-2517221D61A9"
+    },
+    {
+      "class": "shapePath",
+      "id": "ABC59AC4-954E-47E3-9DEE-324B22AF8AD6"
+    },
+    {
+      "class": "shapePath",
+      "id": "464DEDD5-6632-453C-9917-9FA62AB52CEC"
+    },
+    {
+      "class": "shapePath",
+      "id": "8913C0DD-D0D6-4A87-82F1-0188634BE632"
+    },
+    {
+      "class": "shapePath",
+      "id": "2344758A-3744-498F-A03D-CAEA1443799C"
+    },
+    {
+      "class": "shapePath",
+      "id": "4FDF6778-F191-44BD-A6F4-ABBA583F2951"
+    },
+    {
+      "class": "shapePath",
+      "id": "1AB48DFC-AF57-4FB4-AD27-911642C190D1"
+    },
+    {
+      "class": "shapePath",
+      "id": "F9A88F9B-3472-49E4-B659-9D1FC6B12EF2"
+    },
+    {
+      "class": "shapePath",
+      "id": "06DE95F9-A746-41BC-B04A-6D009A51D05D"
+    },
+    {
+      "class": "shapePath",
+      "id": "87F4EDDE-A298-466D-97C2-9D657B6E9ACA"
+    },
+    {
+      "class": "oval",
+      "id": "C990BFBF-7673-4E7F-8D1B-DE8C08B461E1"
+    },
+    {
+      "class": "oval",
+      "id": "CB47D2A9-0056-4781-A4D1-EAF31FF2B956"
+    },
+    {
+      "class": "shapePath",
+      "id": "0A10D6BC-0DA5-43AB-A833-7F8185F492E6"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "D277D4F2-46ED-4389-B232-7B616F4E1698"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "A0EAF490-224A-45CF-8BAC-8E1CCE3A2200"
+    },
+    {
+      "class": "shapePath",
+      "id": "F0CAF2A3-36AE-43D9-9DBD-D94DE47D3A62"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "21C99A6A-B4D3-4342-8462-6B929A679378"
+    },
+    {
+      "class": "shapeGroup",
+      "id": "5F63BEDC-3EF0-4E05-A1BF-97EF7EA65B91"
+    },
+    {
+      "class": "shapePath",
+      "id": "C17C3597-6FDA-43D0-AEAA-146AA42D29BE"
+    },
+    {
+      "class": "shapePath",
+      "id": "63C0BBE6-62EC-4542-A2E4-DFCDF8A15488"
+    },
+    {
+      "class": "shapePath",
+      "id": "76005D3F-D58D-4C81-8849-834831A2754B"
+    },
+    {
+      "class": "shapePath",
+      "id": "D6BD17A6-4459-4C51-9107-E96005322F0A"
+    }
+  ],
+  "name": "c-16",
+  "nameIsFixed": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "do_objectID": "9DA6DE75-CD6F-4945-87C0-AA69A7FF5EC2",
+    "endMarkerType": 0,
+    "miterLimit": 10,
+    "startMarkerType": 0,
+    "windingRule": 1
+  },
+  "userInfo": {
+    "com.animaapp.stc-sketch-plugin": {
+      "kModelPropertiesKey": {
+        "constraints": {
+          "aspectRatio": {
+            "constant": 42,
+            "enabled": 1,
+            "modelID": "constraint_12837966-07fa-400e-9e84-8cff95ce18dc",
+            "model_class": "ADModelConstraint",
+            "model_version": 0,
+            "multiplier": 42
+          },
+          "automatic": 1,
+          "modelID": "viewConstraints_5b7ef732-9745-40b4-a2a3-7bc78e1c038c",
+          "model_class": "ADModelViewConstraints",
+          "model_version": 0,
+          "scaleFactor": 1
+        }
+      }
+    }
+  }
+}
