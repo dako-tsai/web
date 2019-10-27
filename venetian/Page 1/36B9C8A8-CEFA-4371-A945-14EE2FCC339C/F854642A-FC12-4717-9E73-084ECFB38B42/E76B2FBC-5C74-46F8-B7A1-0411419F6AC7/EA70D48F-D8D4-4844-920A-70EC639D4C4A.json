@@ -97,7 +97,6 @@
   "dontSynchroniseWithSymbol": false,
   "exportOptions": {
     "_class": "exportOptions",
-    "do_objectID": "EE81EC68-BEEA-4CD5-AC20-E705C65E5C50",
     "exportFormats": [
     ],
     "includedLayerIds": [
@@ -108,7 +107,6 @@
   "frame": {
     "_class": "rect",
     "constrainProportions": false,
-    "do_objectID": "E884BEDD-2A0C-4D6C-839D-2C92973C7B05",
     "height": 60,
     "width": 240,
     "x": 0,
@@ -123,6 +121,7 @@
   "isVisible": true,
   "layerListExpandedType": 0,
   "lineSpacingBehaviour": 2,
+  "maintainScrollPosition": false,
   "name": "最新技术研发的财务处理系统，真正做到极速",
   "nameIsFixed": false,
   "resizingConstraint": 63,
@@ -131,13 +130,50 @@
   "shouldBreakMaskChain": false,
   "style": {
     "_class": "style",
+    "blur": {
+      "_class": "blur",
+      "center": "{0.5, 0.5}",
+      "isEnabled": false,
+      "motionAngle": 0,
+      "radius": 10,
+      "saturation": 1,
+      "type": 0
+    },
+    "borderOptions": {
+      "_class": "borderOptions",
+      "dashPattern": [
+      ],
+      "isEnabled": true,
+      "lineCapStyle": 0,
+      "lineJoinStyle": 0
+    },
+    "borders": [
+    ],
+    "colorControls": {
+      "_class": "colorControls",
+      "brightness": 0,
+      "contrast": 1,
+      "hue": 0,
+      "isEnabled": false,
+      "saturation": 1
+    },
+    "contextSettings": {
+      "_class": "graphicsContextSettings",
+      "blendMode": 0,
+      "opacity": 1
+    },
     "do_objectID": "F700E29F-2F80-4213-BC11-6C86D40A68DF",
     "endMarkerType": 0,
+    "fills": [
+    ],
+    "innerShadows": [
+    ],
     "miterLimit": 10,
+    "shadows": [
+    ],
     "startMarkerType": 0,
     "textStyle": {
       "_class": "textStyle",
-      "do_objectID": "AB594BDB-4EEA-4830-97DB-CF1C5E588610",
       "encodedAttributes": {
         "MSAttributedStringColorAttribute": {
           "_class": "color",
